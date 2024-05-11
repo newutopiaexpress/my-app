@@ -14,7 +14,7 @@ const badgeVariants = cva(
           "shadow-lg shadow-fuchsia-600/50 rounded-full border-0 bg-gradient-to-br from-fuchsia-400 to-purple-600 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:to-purple-500 text-slate-200",
         destructive:
           "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
-        outline: "rounded-full border-slate-300 text-slate-700 bg-slate-200 border-1",
+        outline: "rounded-full border opacity-75 hover:opacity-100 border-stone-400 text-stone-400 bg-transparent",
         male:
           "pl-2 pr-2 pt-1 pb-1 rounded-full border-transparent bg-sky-400 text-slate-100 hover:bg-sky-500",
         female:

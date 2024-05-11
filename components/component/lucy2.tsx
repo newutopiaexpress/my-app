@@ -18,9 +18,9 @@ import Link from "next/link";
 import { ThreeSteps } from "./three-steps";
 import { Video } from "../ui/video";
 
-export function Lucy() {
+export function Lucy2() {
   return (
-      <div className="lg:w-2/3 relative my-16 p-9 bg-lime-50 mx-auto shadow-2xl rounded-3xl border border-slate-300">
+      <div className="lg:w-2/3 relative my-16 p-9 bg-lime-50 mx-auto shadow-xl rounded-3xl border border-slate-300">
         <div className="flex flex-row mx-auto py-6 px-6">
   
           <div className="relative w-64 h-64">

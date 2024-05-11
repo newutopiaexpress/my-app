@@ -15,6 +15,7 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import Chatbot from "@/components/component/chatbot";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -55,7 +56,7 @@ export default function RootLayout({ children }: any) {
           `}
         </Script>
       </head>
-      <body className="scroll-smooth overflow-x-hidden	min-h-screen bg-background bg-fixed font-sans antialiased bg-gradient-to-tl from-fuchsia-50 to-slate-300">
+      <body className="scroll-smooth overflow-x-hidden	min-h-screen bg-background bg-fixed font-sans antialiased bg-gradient-to-tl from-red-100 to-slate-300">
         <section>
             <Suspense fallback={<div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between h-[69px]" />}>
               <NavBar />
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: any) {
         <main>
         {children}
         <FooterV2/>
+        <Chatbot />
         </main>
       </body>
     </html>

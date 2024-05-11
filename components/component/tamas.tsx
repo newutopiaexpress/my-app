@@ -23,70 +23,92 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 
 
 
 
 export function Tamas() {
   return (
-    <div className="md:w-5/6 mb-9 p-9 bg-gradient-to-br from-pink-400 to-fuchsia-500 mx-auto shadow-xl rounded-3xl border border-slate-300">
+    <div className="mb-9 mx-auto ">
 
-        <Separator orientation="vertical" className="h-16 mt-4 mb-2 bg-pink-400 mx-auto"/>   
-
-
-        <div className="">
-            <p className="w-full md:pt-12 text-xl font-normal text-pink-300 text-center">
-              I'm a web developer who one day 
-            </p>
-            <p className="text-pink-100 text-3xl italic text-center drop-shadow-sm">woke up to the fact</p>
-            <br/>
+      <Carousel>
+        <CarouselContent>
+          <CarouselItem>
+          <div className="h-full flex flex-row relative">
                 <Image
-                    alt="Image"
-                    className="shadow-xl shadow-pink-800/60 mx-auto object-cover rounded-full border border-pink-600 bg-slate-200"
-                    src="/kontotamas2.png"
-                    width= "140"
-                    height= "040"
-                    style={{
-                    objectFit: "cover",
-                    }}
+                      alt="Image"
+                      className="absolute bottom-0 left-0 mx-auto object-cover "
+                      src="/fear.png"
+                      width= "400"
+                      height= "600"
+                      style={{
+                      objectFit: "cover",
+                      }}
                 />
 
+              <div className="absolute bottom-16 right-12 w-48">
+                <p className="w-full md:pt-10 text-md font-normal text-red-400 text-left">
+                I'm a web developer who one day 
+              </p>
+              
+                <p className="tracking-tighter text-stone-800 text-3xl italic text-left drop-shadow-sm">woke up to the fact...</p>
+              </div>
+
+          </div>
+
+          </CarouselItem>
+
+          <CarouselItem>
             <p className="text-pink-100 pt-8 text-3xl italic text-center">a machine is better than me</p>
-            <p className="text-xl font-normal text-pink-300 text-center">
+            <p className="text-xl font-normal text-pink-200 text-center">
               in so many things.
-            </p> 
-        </div>
+            </p>
+          </CarouselItem>
 
+          <CarouselItem>
+          <div className="">
+                      <Separator orientation="vertical" className="h-28 mt-4 mb-2 bg-pink-400 mx-auto"/>       
+                      <Image
+                              alt="Image"
+                              className="object-cover"
+                              src="/car.png"
+                              width= "1111"
+                              height= "185"
+                              style={{
+                              objectFit: "cover",
+                              }}
+                          />
+                    <p className="text-gray-800 text-6xl bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] italic font-extrabold text-center">Existential crisis<br/>kicked in</p>
+                    <Separator orientation="vertical" className="h-32 mt-4 mb-2 bg-pink-400 mx-auto"/>  
+          </div>
+          </CarouselItem>
 
-        <Separator orientation="vertical" className="h-32 mt-4 mb-2 bg-pink-400 mx-auto"/>       
-            <Image
-                    alt="Image"
-                    className="object-cover"
-                    src="/car.png"
-                    width= "1111"
-                    height= "185"
-                    style={{
-                    objectFit: "cover",
-                    }}
-                />
-          <p className="text-pink-100 text-3xl italic text-center">...existential crisis kicked in</p>
-          <Separator orientation="vertical" className="h-32 mt-4 mb-2 bg-pink-400 mx-auto"/>  
-    
+          <CarouselItem>
           <p className="pt-4 text-lg font-normal text-pink-100 text-center">but I also got super excited</p>
-
-        
           <h1 className="italic bg-gradient-to-br from-pink-100 to-pink-200 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-md [text-wrap:balance] text-5xl md:text-7xl md:leading-[5rem]">How does it work?</h1>
+          </CarouselItem>
 
-          <Separator orientation="vertical" className="h-32 mt-4 mb-6 bg-pink-400 mx-auto"/> 
-
+          <CarouselItem>
           <p className="md:mx-auto text-xl font-normal text-pink-100 text-center">
           So I dig deeper and deeper down the rabbit hole
           </p>
           <p className="md:mx-auto text-8xl font-extrabold text-pink-100 text-center">
           &
           </p>
-
           <p className="text-pink-300 text-3xl italic text-center pt-2 pb-10 mb-6">that's why I build things to make<br/>Your transition easier.</p>  
+          </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
 
     </div>
   )
