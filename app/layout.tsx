@@ -15,7 +15,6 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-import Chatbot from "@/components/component/chatbot";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -65,7 +64,6 @@ export default function RootLayout({ children }: any) {
         <main>
         {children}
         <FooterV2/>
-        <Chatbot />
         </main>
       </body>
     </html>
