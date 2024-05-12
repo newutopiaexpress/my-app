@@ -22,7 +22,7 @@ export function Clone2() {
 
     <div className="min-h-96 mb-12 p-6 lg:p-9 mx-auto border  border-stone-300 rounded-3xl relative">
 
-        <Link href="#" className="absolute right-4 top-6 w-48  rounded-full">
+        <Link href="https://clone.utopia.express/" className="absolute right-4 top-6 w-48  rounded-full">
           <p className="text-xs text-right mr-2 text-stone-600 opacity-25 hover:opacity-100">clone.utopia.express <ArrowIcon/></p>
         </Link>
 
