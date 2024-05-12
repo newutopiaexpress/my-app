@@ -37,16 +37,11 @@ export function FooterV2() {
         <nav className="flex items-center justify-center gap-4 md:gap-6 font-normal text-stone-500 ">
           <Link
             className="text-sm hover:text-stone-600"
-            href="https://clone.utopia.express/login"
+            href="https://search.utopia.express"
           >
-            Clone for boys
+            Utopia Research
           </Link>
-          <Link
-            className="text-sm hover:text-stone-600"
-            href="https://clonegirls.utopia.express/login"
-          >
-            Clone for girls
-          </Link>
+
           <Link
             className="text-sm hover:text-stone-600"
             href="#"
