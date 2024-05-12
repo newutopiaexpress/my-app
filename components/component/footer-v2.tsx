@@ -23,7 +23,7 @@ export function FooterV2() {
           <p className="text-xs font-normal text-stone-600 dark:text-stone-200">2024. Utopia Express</p>
           <div className="scale-75">
             <Link href="https://www.producthunt.com/posts/utopia-express?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-utopia&#0045;express" target="_blank">
-              <Image 
+              <img 
               className="mx-auto pt-8 pb-8 opacity-50 hover:opacity-100"
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=445868&theme=neutral" 
               alt="Utopia&#0032;Express - Generate&#0032;any&#0032;image&#0032;of&#0032;yourself | Product Hunt" 
