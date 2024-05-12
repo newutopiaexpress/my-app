@@ -14,6 +14,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image from "next/image";
 
 export function CarouselSection() {
   return (
@@ -42,7 +43,7 @@ export function CarouselSection() {
             <Carousel>
               <CarouselContent>
                 <CarouselItem className="basis-1/3">
-                  <img
+                  <Image
                     alt="Image"
                     className="transition-all opacity-20 first:opacity-100 first:saturate-100 hover:opacity-100 saturate-0 hover:saturate-100 w-100 shadow-xl md:w-32 lg:w-48 aspect-[9/16] overflow-hidden rounded-3xl object-cover object-center"
                     height="1200"
@@ -51,7 +52,7 @@ export function CarouselSection() {
                   />
                 </CarouselItem>
                 <CarouselItem className="basis-1/3">
-                  <img
+                  <Image
                     alt="Image"
                     className="transition-all opacity-20 hover:opacity-100 saturate-0 hover:saturate-100 w-100 shadow-xl md:w-32 lg:w-48 aspect-[9/16] overflow-hidden rounded-3xl object-cover object-center"
                     height="1200"
@@ -60,7 +61,7 @@ export function CarouselSection() {
                   />
                 </CarouselItem>
                 <CarouselItem className="basis-1/3">
-                  <img
+                  <Image
                     alt="Image"
                     className="transition-all opacity-20 hover:opacity-100 saturate-0 hover:saturate-100 w-100 shadow-xl md:w-32 lg:w-48 aspect-[9/16] overflow-hidden rounded-3xl object-cover object-center"
                     height="1200"
