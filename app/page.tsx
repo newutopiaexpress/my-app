@@ -10,6 +10,8 @@ import { Tamas2 } from "@/components/component/tamas2";
 import { ThreeSteps } from "@/components/component/three-steps";
 import { CloneCards } from "@/components/component/clone-cards";
 import { Purposes } from "@/components/component/purposes";
+import { Separator } from "@/components/ui/separator";
+
 
 export default function Home() {
   return (
@@ -21,8 +23,9 @@ export default function Home() {
           <Tamas2/>
           </div>
           <div className="mx-auto lg:w-full">
-          <Purposes/>
           
+          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+          <Purposes/>
           </div> 
           <div className="mx-auto lg:w-full">
           <Clone2/>

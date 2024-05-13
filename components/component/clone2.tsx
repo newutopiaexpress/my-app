@@ -38,8 +38,9 @@ export function Clone2() {
         />
 
         <div className="min-h-96 max-w-2xl grid-cols-1">
-          <h1 className="md:mt-9 md:pt-12 pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-emerald-900 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
-          Create a digital clone of anything
+          
+          <h1 className="md:mt-9 md:pt-12 pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
+          Create a digital clone of anyone
           </h1>
           <p className="pb-4 text-2xl font-normal text-slate-600 text-left">
           With the tools bellow you can take any picture of yourself. Or anyone. Or anything.    

@@ -21,7 +21,7 @@ import { CheckIcon} from '@radix-ui/react-icons';
 export function Purposes() {
   return (
 
-    <div id="launch" className="mb-9 p-6 lg:p-9 mx-auto border  border-stone-700 rounded-3xl relative bg-gradient-to-br from-stone-900 to-stone-800 shadow-xl shadow-stone-600/80">
+    <div id="launch" className="bg-[url('/bg1.png')] bg-cover mb-9 p-6 lg:p-9 mx-auto border  border-stone-700 rounded-3xl relative shadow-xl shadow-stone-600/80">
 
         <Link href="https://4me3su0pmsb.typeform.com/to/D1vEjwko" className="absolute right-0 top-4 w-16  rounded-full">
               <p className="text-xs text-right text-stone-500 opacity-25 hover:opacity-100">
@@ -30,76 +30,79 @@ export function Purposes() {
         </Link>
 
 
-        <h1 className="py-9 animate-fade bg-gradient-to-br from-stone-200 to-fuchsia-100 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">Launch your AI based service</h1>
-        <p className="pb-4 text-2xl font-normal text-slate-400 text-center">You bring the idea, I bring the tech. Fully functional, monetizable, rentable systems.</p>
+        <h1 className="py-12 mt-12 animate-fade bg-gradient-to-br from-stone-200 to-stone-100 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">Launch your AI based service</h1>
+        <p className="pb-6 text-xl font-normal text-stone-400 text-center">You bring the idea, I bring the tech. Fully automated, monetizable, rentable systems.</p>
    
-        <div className="py-6 mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
+        <div className="md:w-2/3 mx-auto py-9 mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4 lg:gap-9">
 
-            <div className="transition-all border border-slate-600 p-4 rounded-2xl hover:border-slate-400 shadow-lg shadow-slate-100/10 hover:shadow-amber-400/20">
+            <div className="bg-stone-100/0 hover:bg-slate-900/20 transition-all p-6 rounded-2xl shadow-md shadow-slate-800/20 hover:shadow-slate-100/20">
               <span className="text-stone-100 text-xl">
                 <DimensionsIcon/>
               </span>
-              <h1 className="py-4 text-xl leading-5 font-bold text-stone-100">For interior designers</h1>
-              <p className="leading-4 text-sm text-slate-400">Create designs based on a sketch or photo</p>
+              <h1 className="py-4 text-xl leading-5 font-bold text-stone-100">For interior designers & real estate agents</h1>
+              <p className="leading-4 text-sm text-slate-300">Create interior design variations based on a sketch or photo.</p>
             </div>
 
-            <div className="transition-all border border-slate-600 p-4 rounded-2xl hover:border-slate-400 shadow-lg shadow-slate-100/10 hover:shadow-pink-400/30">
+            <div className="bg-stone-100/0 hover:bg-slate-900/20 transition-all p-6 rounded-2xl shadow-md shadow-slate-800/20 hover:shadow-slate-100/20">
               <span className="text-stone-100 text-xl">
                 <ScissorsIcon/>
               </span>
-              <h1 className="py-4 text-xl leading-5 font-bold text-stone-100">For hairdressers, stylists</h1>
-              <p className="leading-4 text-sm text-slate-400">Show your customers some cool hairstyles with their own faces</p>
+              <h1 className="py-4 text-xl leading-5 font-bold text-stone-100">For hairdressers & stylists</h1>
+              <p className="leading-4 text-sm text-slate-300">Show your customers some cool hairstyles before a haircut.</p>
             </div>
 
-            <div className="transition-all border border-slate-600 p-4 rounded-2xl hover:border-slate-400 shadow-lg shadow-slate-100/10 hover:shadow-sky-200/30">
+            <div className="bg-stone-100/0 hover:bg-slate-900/20 transition-all p-6 rounded-2xl shadow-md shadow-slate-800/20 hover:shadow-slate-100/20">
               <span className="text-stone-100 text-xl">
                 <RocketIcon/>
               </span>
-              <h1 className="py-4 text-xl leading-5 font-bold text-stone-100">For product owners</h1>
-              <p className="leading-4 text-sm text-slate-400">Create virtual product photos in any enviroment</p>
+              <h1 className="py-4 text-xl leading-5 font-bold text-stone-100">For webshops & product owners</h1>
+              <p className="leading-4 text-sm text-slate-300">Create virtual product photos in any style and enviroment.</p>
             </div>
 
-            <div className="transition-all border border-slate-600 p-4 rounded-2xl hover:border-slate-400 shadow-lg shadow-slate-100/10 hover:shadow-green-300/20">
+            <div className="bg-stone-100/0 hover:bg-slate-900/20 transition-all p-6 rounded-2xl shadow-md shadow-slate-800/20 hover:shadow-slate-100/20">
               <span className="text-stone-100 text-xl">
                 <HeartIcon/>
               </span>
-              <h1 className="py-4 text-xl leading-5 font-bold text-stone-100">Virtual try-on for clothes stores</h1>
-              <p className="leading-4 text-sm text-slate-400">Enable your customers to try on clothes virtually</p>
+              <h1 className="py-4 text-xl leading-5 font-bold text-stone-100">Virtual try-on for clothes stores, designers</h1>
+              <p className="leading-4 text-sm text-slate-300">Enable your customers to try on clothes virtually.</p>
             </div>
 
 
-            <div className="transition-all border border-slate-600 p-4 rounded-2xl hover:border-slate-400 shadow-2xl shadow-slate-100/10 hover:shadow-fuchsia-600/80">
+            <div className="bg-stone-100/0 hover:bg-slate-900/20 transition-all p-6 rounded-2xl shadow-md shadow-slate-800/20 hover:shadow-slate-100/20">
               <span className="text-stone-100 text-xl">
                 <PlusIcon/>
               </span>
               <h1 className="py-4 text-xl leading-5 font-bold text-stone-100">Other use case?</h1>
-              <p className="leading-4 text-sm text-slate-400">I'm just a developer, you probably have more and better ideas</p>
+              <p className="leading-4 text-sm text-slate-300">I'm just a developer, you probably have more and better ideas</p>
             </div>
-
+  
         </div>
 
-        <div className="md:w-2/3 mx-auto text-center text-2xl font-normal text-slate-400 py-9">
-          <p className="text-left">
-            <span className="float-left pt-2 pr-2 scale-150 text-slate-100"><CheckIcon/></span>Start your customized service within 48 hours
+        <div className="md:w-full mt-12 p-9 mx-auto bg-stone-900/20 rounded-2xl  text-center text-md font-normal text-slate-400 py-9">
+          <p className="text-left pb-4">
+            <span className="float-left pt-2 pr-2 scale-150 text-slate-100"><CheckIcon/></span>Personalized AI service for yourself or your business
           </p>
-          <p className="text-left">
-            <span className="float-left pt-2 pr-2 scale-150 text-slate-100"><CheckIcon/></span>Powered by Stripe - Start a free or paid service
+          <p className="text-left pb-4">
+            <span className="float-left pt-2 pr-2 scale-150 text-slate-100"><CheckIcon/></span>Powered by Stripe - Start a private or a paid public service
           </p>
-          <p className="text-left">
-            <span className="float-left pt-2 pr-2 scale-150 text-slate-100"><CheckIcon/></span>One-time setup cost from 99€
+          <p className="text-left pb-4">
+            <span className="float-left pt-2 pr-2 scale-150 text-slate-100"><CheckIcon/></span>One-time setup cost from 199€
           </p>
-          <p className="text-left">
+          <p className="text-left pb-4">
             <span className="float-left pt-2 pr-2 scale-150 text-slate-100"><CheckIcon/></span>Monthly maintenance from 20€/month
           </p>
+          <p className="text-left pb-4">
+            <span className="float-left pt-2 pr-2 scale-150 text-slate-100"><CheckIcon/></span>Fully automated
+          </p>
 
         </div>
 
-        <div className="mt-6 mx-auto text-center">
+        <div className="mt-4 mb-6 mx-auto text-center">
           <Link target="_blank" href="https://4me3su0pmsb.typeform.com/to/D1vEjwko">
-            <Button variant="secondary" className="h-12">
-                Fill the form for details
-                <span className="float-right">
-                <Button variant="default" size="icon">
+            <Button variant="outline" className=" text-slate-200 hover:text-slate-800 h-14 w-60">
+                <span className="ml-4">Fill the form for details</span>
+                <span className="float-right ml-2">
+                <Button variant="ghost" size="sm">
                   <ArrowIcon/>
                 </Button>
                 </span>

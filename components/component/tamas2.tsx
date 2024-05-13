@@ -53,13 +53,13 @@ export function Tamas2() {
             />
 
             <p className="py-6 animate-fade-up animate-delay-300 tracking-wide text-2xl text-stone-500 dark:text-gray-100 transparent text-center">Prevent the Existential Crisis</p>
-            <Separator orientation="vertical" className="h-16 w-1 mt-2 mb-2 bg-stone-300 mx-auto"/>
+            <Separator orientation="vertical" className="h-16 w-px mt-2 mb-2 bg-stone-300 mx-auto"/>
             <h1 className="py-6 animate-fade bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
             Hop on the Utopia Express! 
             </h1>
 
             <p className="py-6 animate-fade-up animate-delay-300 tracking-wide md:w-5/6 mx-auto text-2xl text-stone-500 dark:text-gray-100 transparent text-center">Here you will find some tools that will make your Journey into the Singularity much smoother</p>
-            <Separator orientation="vertical" className="h-16 w-1 mt-2 mb-2 bg-stone-300 mx-auto"/> 
+            <Separator orientation="vertical" className="h-16 w-px mt-2 mb-2 bg-stone-300 mx-auto"/> 
 
           </div>
 
