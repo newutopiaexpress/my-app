@@ -20,12 +20,13 @@ import { ThreeSteps } from "./three-steps";
 export function Clone2() {
   return (
 
-    <div className="min-h-96 mb-12 p-6 lg:p-9 mx-auto border  border-stone-300 rounded-3xl relative">
+    <div className="grid md:grid-cols-6 min-h-96 mb-12 p-6 lg:p-9 mx-auto border  border-stone-300 rounded-3xl relative">
 
         <Link href="https://clone.utopia.express/" className="absolute right-4 top-6 w-48  rounded-full">
           <p className="text-xs text-right mr-2 text-stone-600 opacity-25 hover:opacity-100">clone.utopia.express <ArrowIcon/></p>
         </Link>
 
+        <div className="md:col-span-2">
         <Image
                   alt="Image"
                   className="float-left"
@@ -36,17 +37,21 @@ export function Clone2() {
                     objectFit: "cover",
                   }}
         />
+        </div>
 
-        <div className="min-h-96 max-w-2xl grid-cols-1">
-          
-          <h1 className="md:mt-9 md:pt-12 pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
+        <div className="p-6 md:col-span-4 min-h-96 max-w-2xl">
+
+          <div className="mt-12 w-52 py-1 px-3 rounded-full text-xs bg-red-400 text-stone-200">Highest Quality, from 0.01€/image</div>
+
+          <h1 className="pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
           Create a digital clone of anyone
           </h1>
-          <p className="pb-4 text-2xl font-normal text-slate-600 text-left">
-          With the tools bellow you can take any picture of yourself. Or anyone. Or anything.    
+          <p className="pb-6 text-2xl font-normal text-slate-600 text-left">
+          Upload some photo and take any picture of yourself.    
           </p> 
-          <Link href="https://clone.utopia.express/">
-            <Button variant="default" className="h-12">
+         
+          <Link target="_blank" href="https://4me3su0pmsb.typeform.com/to/D1vEjwko">
+            <Button variant="outline" className=" text-slate-500 hover:text-slate-800 h-14 border border-slate-300">
               <Image
                 alt="Image"
                 className="float-left rounded-full shadow-md shadow-stone-800/80"
@@ -76,14 +81,19 @@ export function Clone2() {
                 style={{
                 objectFit: "cover",
                 }}
-              />  
-              <span className="ml-4 mr-2">Create a Clone</span>
+              /> 
+                <span className="ml-4">Go to <span className="font-extrabold">clone.utopia.express</span></span>
+                <span className="float-right ml-2">
+                <Button variant="ghost" size="sm">
+                  <ArrowIcon/>
+                </Button>
+                </span>
             </Button>
           </Link>
+         
         </div>
 
-        <div className="min-h-16"></div>
-       
+
 
     </div>
   )

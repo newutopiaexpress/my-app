@@ -25,11 +25,36 @@ export default function Home() {
           <div className="mx-auto lg:w-full">
           
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+          <p className="text-xs uppercase tracking-wider text-stone-400">
+            Personalized, rentable AI services
+            <span className="float-right">2024.05.01</span>
+          </p>
+          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+
           <Purposes/>
           </div> 
+
+          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+          <p className="text-xs uppercase tracking-wider text-stone-400">
+            AI based fine tuning service
+            <span className="float-right">2024.05.10</span>
+          </p>
+          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+
+
           <div className="mx-auto lg:w-full">
           <Clone2/>
-          </div>  
+          </div> 
+
+
+          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+          <p className="text-xs uppercase tracking-wider text-stone-400">
+            Multi Agent Research Assistant
+            <span className="float-right">2024.05.10</span>
+          </p>
+          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+
+
           <div className="mx-auto lg:w-full">
           <Research/> 
           </div>
