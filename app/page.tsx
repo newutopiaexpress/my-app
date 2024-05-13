@@ -22,6 +22,7 @@ export default function Home() {
           </div>
           <div className="mx-auto lg:w-full">
           <Purposes/>
+          
           </div> 
           <div className="mx-auto lg:w-full">
           <Clone2/>
