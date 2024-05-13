@@ -18,7 +18,7 @@ export function Research() {
     <div className="mt-12 mb-9">
 
       
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-6 border border-stone-300 rounded-3xl bg-transparent ">
+        <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 lg:gap-6 border border-stone-300 rounded-3xl bg-transparent ">
 
           <div className="p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all  relative"> 
 

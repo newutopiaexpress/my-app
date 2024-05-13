@@ -29,6 +29,7 @@ export function Purposes() {
               </p>
         </Link>
 
+
         <h1 className="py-9 animate-fade bg-gradient-to-br from-stone-200 to-fuchsia-100 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">Launch your AI based service</h1>
         <p className="pb-4 text-2xl font-normal text-slate-400 text-center">You bring the idea, I bring the tech. Fully functional, monetizable, rentable systems.</p>
    
