@@ -7,12 +7,13 @@ import { CardContent, Card } from "@/components/ui/card";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
+import { Button } from "../ui/button";
 
 export function ContactCard() {
   return (
     <div className="flex flex-row gap-9 justify-center pb-6">
     <Card className="w-full max-w-sm mx-auto rounded-2xl shadow-xl shadow-stone-950/90">
-      <div className="p-2 flex items-center gap-4">
+      <div className="p-6 flex items-center gap-4">
         <Image
           alt="Avatar"
           className="rounded-full"
@@ -46,10 +47,18 @@ export function ContactCard() {
               <dd className="text-right ml-auto">@KontoTamas</dd>
             </Link>
           </div>
-          <div className="flex ">
+          <div className="flex border-b pb-2">
             <dt className="w-1/4 text-slate-400">Messenger</dt>
             <Link href="https://www.facebook.com/kontotamas">
             <dd className="text-end">kontotamas</dd>
+            </Link>
+          </div>
+          <div className="flex ">
+            <dt className="w-1/4 text-slate-400">Message</dt>
+            <Link href="https://4me3su0pmsb.typeform.com/to/D1vEjwko">
+            <dd className="text-end">
+              <Button variant="default">Send Message</Button>
+            </dd>
             </Link>
           </div>
         </dl>

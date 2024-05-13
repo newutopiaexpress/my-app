@@ -21,14 +21,15 @@ export default function Home() {
           <Tamas2/>
           </div>
           <div className="mx-auto lg:w-full">
-          <Research/> 
-          </div>
-          <div className="mx-auto lg:w-full">
-          <Clone2/>
+          <Purposes/>
           </div> 
           <div className="mx-auto lg:w-full">
-          <Purposes/>
-          </div>    
+          <Clone2/>
+          </div>  
+          <div className="mx-auto lg:w-full">
+          <Research/> 
+          </div>
+  
         <Youtube/>
       </div>
           

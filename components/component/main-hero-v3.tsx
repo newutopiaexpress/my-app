@@ -26,7 +26,7 @@ export function MainHeroV3() {
           <br />
           We are not the robots anymore.
         </p>
-        <Link href="#">
+        <Link href="#launch">
                 <Button variant="outline" className="h-14">
                       <span className="font-extrabold mr-2 ml-4">Launch</span> Your Automated AI Service
                       <Button variant="default" size="icon" className="ml-4">

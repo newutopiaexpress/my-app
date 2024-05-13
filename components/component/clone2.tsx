@@ -44,8 +44,40 @@ export function Clone2() {
           <p className="pb-4 text-2xl font-normal text-slate-600 text-left">
           With the tools bellow you can take any picture of yourself. Or anyone. Or anything.    
           </p> 
-          <Link href="">
-            <Button>Create a Clone</Button>
+          <Link href="https://clone.utopia.express/">
+            <Button variant="default" className="h-12">
+              <Image
+                alt="Image"
+                className="float-left rounded-full shadow-md shadow-stone-800/80"
+                src="/01.png"
+                width= "34"
+                height= "34"
+                style={{
+                objectFit: "cover",
+                }}
+              /> 
+              <Image
+                alt="Image"
+                className="float-left rounded-full ml-1 shadow-md shadow-stone-800/80"
+                src="/02.png"
+                width= "34"
+                height= "34"
+                style={{
+                objectFit: "cover",
+                }}
+              />
+              <Image
+                alt="Image"
+                className="float-left rounded-full ml-1 shadow-md shadow-stone-800/80"
+                src="/04.png"
+                width= "34"
+                height= "34"
+                style={{
+                objectFit: "cover",
+                }}
+              />  
+              <span className="ml-4 mr-2">Create a Clone</span>
+            </Button>
           </Link>
         </div>
 
