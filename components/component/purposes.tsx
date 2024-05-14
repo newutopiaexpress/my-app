@@ -107,7 +107,6 @@ export function Purposes() {
                 </Button>
                 </span>
             </Button>
-
           </Link>
         </div>
 

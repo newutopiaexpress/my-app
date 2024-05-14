@@ -18,28 +18,9 @@ import Image from "next/image";
 
 export function CarouselSection() {
   return (
-    <div className="w-full">
-        <div className="grid items-center gap-0 lg:grid-cols-2">
-          <div className="md:pr-16 md:border-r-2 md:border-stone-300">
-            <div className="relative pt-40 pb-44 pl-10 pr-10 md:pr-0">
-              <h1 className="md:text-end pb-4 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl">
-                Bring to life your Clone
-              </h1>
-              <p className="pt-3 md:text-end md:pl-8 [text-wrap:balance] text-gray-500 md:text-xl dark:text-gray-400">
-              Take your Clone ID and create any photo of your Clone 
-              </p>
-              <div className="text-end pt-3">
-              <Button className="border border-slate-700 bg-gradient-to-t from-stone-800 to-stone-700 h-12 w-100 justify-items-stretch mt-3 transition-all tracking-wide text-sm font-normal text-slate-300 shadow-xl shadow-stone-800/30 hover:shadow-lg hover:shadow-stone-700/30 rounded-full" asChild>
-                  <div>
-                    <span className="transition-all ml-2 mr-0 text-slate-300 hover:text-slate-400">Get your Clone ID</span>  
-                    <Badge variant="female" className="ml-3">Female</Badge>
-                    <Badge variant="male" className="ml-2">Male</Badge>
-                  </div>
-              </Button>
-              </div>
-            </div>
-          </div>
-          <div className="max-h-64 flex items-center md:pl-16 hover:cursor-e-resize relative">
+    <div className="">
+
+          <div className=" flex items-center md:pl-16 hover:cursor-e-resize relative">
             <Carousel>
               <CarouselContent>
                 <CarouselItem className="basis-1/3">
@@ -74,7 +55,7 @@ export function CarouselSection() {
               <CarouselNext />
             </Carousel>
           </div>
-        </div>
+
     </div>
   )
 }

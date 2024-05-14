@@ -11,6 +11,8 @@ import { ThreeSteps } from "@/components/component/three-steps";
 import { CloneCards } from "@/components/component/clone-cards";
 import { Purposes } from "@/components/component/purposes";
 import { Separator } from "@/components/ui/separator";
+import { Posters } from "@/components/component/posters";
+import { PostersTwo } from "@/components/component/posters-two";
 
 
 export default function Home() {
@@ -58,8 +60,30 @@ export default function Home() {
           <div className="mx-auto lg:w-full">
           <Research/> 
           </div>
-  
-        <Youtube/>
+
+          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+          <p className="text-xs uppercase tracking-wider text-stone-400">
+            Uplifting Music on youtube
+            <span className="float-right">2024.04.10</span>
+          </p>
+          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+
+          <div className="mx-auto lg:w-full">
+          <Posters/>
+          </div>
+
+          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+          <p className="text-xs uppercase tracking-wider text-stone-400">
+            Poster Series
+            <span className="float-right">2024.02.10</span>
+          </p>
+          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+
+          <div className="mx-auto lg:w-full">
+          <Youtube/>
+          </div>
+
+
       </div>
           
     
