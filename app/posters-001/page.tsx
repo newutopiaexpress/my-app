@@ -1,10 +1,10 @@
 "use client"
 
-
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+
 
 export default function Page() {
   return (

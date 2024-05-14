@@ -48,7 +48,7 @@ export function Research() {
 
           <div className="mt-6 p-6 flex flex-col transition-all bg-transparent relative"> 
             
-            <Link href="#" className="absolute right-4 top-0 w-48  rounded-full">
+            <Link href="https://search.utopia.express" className="absolute right-4 top-0 w-48  rounded-full">
               <p className="text-xs text-right text-stone-100 opacity-50 hover:opacity-100">search.utopia.express <ArrowIcon/></p>
             </Link>
 
@@ -93,7 +93,7 @@ export function Research() {
               />
             </p>
 
-            <Link target="_blank" href="https://4me3su0pmsb.typeform.com/to/D1vEjwko">
+            <Link target="_blank" href="https://search.utopia.express">
               <Button variant="outline" className=" text-lime-200 hover:text-slate-800 h-14 w-60">
                   <span className="ml-4">search.utopia.express</span>
                   <span className="float-right ml-2">

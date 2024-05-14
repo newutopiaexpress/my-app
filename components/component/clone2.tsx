@@ -50,46 +50,49 @@ export function Clone2() {
           Upload some photo and take any picture of yourself.    
           </p> 
          
-          <Link target="_blank" href="https://4me3su0pmsb.typeform.com/to/D1vEjwko">
-            <Button variant="outline" className=" text-slate-500 hover:text-slate-800 h-14 border border-slate-300">
-              <Image
-                alt="Image"
-                className="float-left rounded-full shadow-md shadow-stone-800/80"
-                src="/01.png"
-                width= "34"
-                height= "34"
-                style={{
-                objectFit: "cover",
-                }}
-              /> 
-              <Image
-                alt="Image"
-                className="float-left rounded-full ml-1 shadow-md shadow-stone-800/80"
-                src="/02.png"
-                width= "34"
-                height= "34"
-                style={{
-                objectFit: "cover",
-                }}
-              />
-              <Image
-                alt="Image"
-                className="float-left rounded-full ml-1 shadow-md shadow-stone-800/80"
-                src="/04.png"
-                width= "34"
-                height= "34"
-                style={{
-                objectFit: "cover",
-                }}
-              /> 
-                <span className="ml-4">Go to <span className="font-extrabold">clone.utopia.express</span></span>
-                <span className="float-right ml-2">
-                <Button variant="ghost" size="sm">
-                  <ArrowIcon/>
-                </Button>
-                </span>
-            </Button>
-          </Link>
+         <p>
+            <Link target="_blank" href="https://clone.utopia.express/">
+              <Button variant="outline" className=" text-slate-500 hover:text-slate-800 h-14 border border-slate-300">
+                <Image
+                  alt="Image"
+                  className="float-left rounded-full shadow-md shadow-stone-800/80"
+                  src="/01.png"
+                  width= "34"
+                  height= "34"
+                  style={{
+                  objectFit: "cover",
+                  }}
+                /> 
+                <Image
+                  alt="Image"
+                  className="float-left rounded-full ml-1 shadow-md shadow-stone-800/80"
+                  src="/02.png"
+                  width= "34"
+                  height= "34"
+                  style={{
+                  objectFit: "cover",
+                  }}
+                />
+                <Image
+                  alt="Image"
+                  className="float-left rounded-full ml-1 shadow-md shadow-stone-800/80"
+                  src="/04.png"
+                  width= "34"
+                  height= "34"
+                  style={{
+                  objectFit: "cover",
+                  }}
+                /> 
+                  <span className="ml-4">Go to <span className="font-extrabold">clone.utopia.express</span></span>
+                  <span className="float-right ml-2">
+                  <Button variant="ghost" size="sm">
+                    <ArrowIcon/>
+                  </Button>
+                  </span>
+              </Button>
+            </Link>
+         </p>
+
          
         </div>
 
