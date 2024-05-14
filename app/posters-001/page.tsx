@@ -79,7 +79,7 @@ export default function Page() {
 
     </div>
 
-    <div class="flex gap-4">
+    <div className="flex gap-4">
           <div>
             <Image
               alt="Image"
