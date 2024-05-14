@@ -80,7 +80,7 @@ export default function Page() {
     </div>
 
     <div class="flex gap-4">
-          <div className="">
+          <div>
             <Image
               alt="Image"
               className="w-60"
@@ -92,7 +92,7 @@ export default function Page() {
               }}
               /> 
           </div>
-          <div className="">
+          <div>
             <Image
               alt="Image"
               className="w-60"
@@ -104,7 +104,7 @@ export default function Page() {
               }}
               /> 
           </div>
-          <div className="">
+          <div>
             <Image
               alt="Image"
               className="w-60"
@@ -116,7 +116,7 @@ export default function Page() {
               }}
               /> 
           </div>
-          <div className="">
+          <div>
             <Image
               alt="Image"
               className="w-60"
@@ -128,7 +128,7 @@ export default function Page() {
               }}
               /> 
           </div>
-          <div className="">
+          <div>
             <Image
               alt="Image"
               className="w-60"
@@ -140,7 +140,7 @@ export default function Page() {
               }}
               /> 
           </div>
-          <div className="">
+          <div>
             <Image
               alt="Image"
               className="w-60"
@@ -152,7 +152,7 @@ export default function Page() {
               }}
               /> 
           </div>
-          <div className="">
+          <div>
             <Image
               alt="Image"
               className="w-60"
@@ -164,7 +164,7 @@ export default function Page() {
               }}
               /> 
           </div>
-          <div className="">
+          <div>
             <Image
               alt="Image"
               className="w-60"
