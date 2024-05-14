@@ -2,27 +2,9 @@
 
 
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { ThreeSteps } from "./three-steps";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-  } from "@/components/ui/carousel";
-  import { Separator } from "@/components/ui/separator";
+import { Separator } from "@/components/ui/separator";
 
 export default function Page() {
   return (
