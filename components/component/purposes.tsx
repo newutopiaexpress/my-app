@@ -33,7 +33,7 @@ export function Purposes() {
         <h1 className="py-12 mt-12 animate-fade bg-gradient-to-br from-stone-200 to-stone-100 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">Launch your AI based service</h1>
         <p className="pb-6 text-xl font-normal text-stone-400 text-center">You bring the idea, I bring the tech. Fully automated, monetizable, rentable systems.</p>
    
-        <div className="md:w-2/3 mx-auto py-9 mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4 lg:gap-9">
+        <div className="md:w-2/3 mx-auto py-9 mt-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-4 lg:gap-9">
 
             <div className="bg-stone-100/0 hover:bg-slate-900/20 transition-all p-6 rounded-2xl shadow-md shadow-slate-800/20 hover:shadow-slate-100/20">
               <span className="text-stone-100 text-xl">

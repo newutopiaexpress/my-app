@@ -19,7 +19,7 @@ export default function Home() {
   return (
 
 
-      <div className="sm:w-full md:w-full lg:w-5/6 mx-auto py-6 px-6">
+      <div className="overflow-x-hidden w-full md:w-full lg:w-5/6 mx-auto py-6 px-6">
         <MainHeroV3/>
           <div className="mx-auto lg:w-2/3">
           <Tamas2/>
@@ -63,8 +63,8 @@ export default function Home() {
 
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
           <p className="text-xs uppercase tracking-wider text-stone-400">
-            Uplifting Music on youtube
-            <span className="float-right">2024.04.10</span>
+            Poster Series
+            <span className="float-right">2024.02.10</span>
           </p>
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
 
@@ -74,8 +74,8 @@ export default function Home() {
 
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
           <p className="text-xs uppercase tracking-wider text-stone-400">
-            Poster Series
-            <span className="float-right">2024.02.10</span>
+            Uplifting Music on youtube
+            <span className="float-right">2024.04.10</span>
           </p>
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
 
