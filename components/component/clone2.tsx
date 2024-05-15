@@ -41,7 +41,7 @@ export function Clone2() {
 
         <div className="p-6 md:col-span-4 min-h-96 max-w-2xl">
 
-          <div className="mt-12 w-52 py-1 px-3 rounded-full text-xs bg-red-400 text-stone-200">Highest Quality, from 0.01€/image</div>
+          <div className="mt-12 w-52 py-1 px-3 rounded-full text-xs bg-red-300 text-stone-800">Highest Quality, from 0.01€/image</div>
 
           <h1 className="pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
           Create a digital clone of anyone

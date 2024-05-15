@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 export function ContactCard() {
   return (
     <div className="flex flex-row gap-9 justify-center pb-6">
-    <Card className="w-full max-w-sm mx-auto rounded-2xl shadow-xl shadow-stone-950/90">
+    <Card className="w-full max-w-sm mx-auto rounded-2xl shadow-xl shadow-stone-900/90">
       <div className="p-6 flex items-center gap-4">
         <Image
           alt="Avatar"
@@ -57,7 +57,7 @@ export function ContactCard() {
             <dt className="w-1/4 text-slate-400">Message</dt>
             <Link href="https://4me3su0pmsb.typeform.com/to/D1vEjwko">
             <dd className="text-end">
-              <Button variant="default">Send Message</Button>
+              <Button variant="outline">Send Message</Button>
             </dd>
             </Link>
           </div>

@@ -26,7 +26,7 @@ export function Research() {
               <span className="bg-gradient-to-br from-lime-100 to-slate-100 bg-clip-text text-transparent">Lucy</span><span className="text-2xl font-normal text-lime-200"> - Your companion to down the rabbit hole!</span>
             </h1>
             
-            <div className="gap-2 flex flex-row w-full pt-2 lg:gap-6">
+            <div className="gap-2 grid grid-cols-1 md:grid-cols-3 w-full pt-2 lg:gap-6">
               <div className="p-4 basis-full lg:basis-1/3 transition-all rounded-xl border border-green-400 hover:border hover:border-lime-300 hover:shadow-lg">
                 <UploadIcon/>
                 <p className="text-md text-lime-200 pt-4">Refine</p>

@@ -36,21 +36,21 @@ export function FooterV2() {
 
         <nav className="flex items-center justify-center gap-4 md:gap-6 font-normal text-stone-500 ">
           <Link
-            className="text-sm hover:text-stone-600"
+            className="text-xs hover:text-stone-600"
             href="https://search.utopia.express"
           >
             Utopia Research
           </Link>
 
           <Link
-            className="text-sm hover:text-stone-600"
-            href="#"
+            className="text-xs hover:text-stone-600"
+            href="https://clone.utopia.express"
           >
-            Services
+            Utopia Clone
           </Link>
 
         <Dialog>
-          <DialogTrigger className="hover:text-stone-400">
+          <DialogTrigger className="text-xs hover:text-stone-400">
           Contact
           </DialogTrigger>
           <DialogContent className="rounded-xl bg-transparent shadow-none border-0">
