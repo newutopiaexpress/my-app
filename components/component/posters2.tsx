@@ -25,13 +25,13 @@ import {
   } from "@/components/ui/carousel"
   
 
-export function Posters() {
+export function Posters2() {
   return (
 
     <div className="grid md:grid-cols-5 gap-9 min-h-96 mb-12 p-6 lg:p-9 mx-auto border  border-stone-300 rounded-3xl relative">
 
         <Link href="https://clone.utopia.express/" className="absolute right-4 top-6 w-48  rounded-full">
-          <p className="text-xs text-right mr-2 text-stone-600 opacity-25 hover:opacity-100">Series 001 <ArrowIcon/></p>
+          <p className="text-xs text-right mr-2 text-stone-600 opacity-25 hover:opacity-100">Series 002 <ArrowIcon/></p>
         </Link>
 
         <div className="md:col-span-2">

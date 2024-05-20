@@ -18,16 +18,16 @@ export default function Page() {
     </p>
   <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
 
-    <div className="grid md:grid-cols-9 gap-9 min-h-96 mt-6 mb-12 p-6 lg:p-9 mx-auto border  border-stone-300 rounded-3xl relative">
+    <div className="grid md:grid-cols-9 gap-0 min-h-96 mt-6 mb-12 p-6 lg:p-9 mx-auto border  border-stone-300 rounded-3xl relative">
 
-        <div className="md:col-span-3">
+        <div className="md:col-span-4">
 
                         <Image
                         alt="Image"
                         className="float-left"
                         src="/spark.png"
-                        width= "694"
-                        height= "1041"
+                        width= "480"
+                        height= "600"
                         style={{
                         objectFit: "cover",
                         }}
@@ -35,7 +35,7 @@ export default function Page() {
                     
         </div>
 
-        <div className=" md:col-span-6 min-h-96 max-w-2xl">
+        <div className=" md:col-span-5 min-h-96 max-w-2xl">
 
           <div className="mt-9 w-60 text-center py-1 px-3 rounded-full text-xs bg-amber-200 text-stone-700">HQ, 300 Dpi printable Poster Series</div>
 
@@ -79,11 +79,11 @@ export default function Page() {
 
     </div>
 
-    <div className="flex gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-9">
           <div>
             <Image
               alt="Image"
-              className="w-60"
+              className="w-120"
               src="/coke_small.jpg"
               width= "694"
               height= "1041"
@@ -95,7 +95,7 @@ export default function Page() {
           <div>
             <Image
               alt="Image"
-              className="w-60"
+              className="w-120"
               src="/broccoli_small.jpg"
               width= "694"
               height= "1041"
@@ -107,7 +107,7 @@ export default function Page() {
           <div>
             <Image
               alt="Image"
-              className="w-60"
+              className="w-120"
               src="/honey_small.jpg"
               width= "694"
               height= "1041"
@@ -119,7 +119,7 @@ export default function Page() {
           <div>
             <Image
               alt="Image"
-              className="w-60"
+              className="w-120"
               src="/disco_small.jpg"
               width= "694"
               height= "1041"
@@ -131,7 +131,7 @@ export default function Page() {
           <div>
             <Image
               alt="Image"
-              className="w-60"
+              className="w-120"
               src="/bonsai_small.jpg"
               width= "694"
               height= "1041"
@@ -143,7 +143,7 @@ export default function Page() {
           <div>
             <Image
               alt="Image"
-              className="w-60"
+              className="w-120"
               src="/daftpunk_small.jpg"
               width= "694"
               height= "1041"
@@ -155,7 +155,7 @@ export default function Page() {
           <div>
             <Image
               alt="Image"
-              className="w-60"
+              className="w-120"
               src="/fuck_small.jpg"
               width= "694"
               height= "1041"
@@ -167,7 +167,7 @@ export default function Page() {
           <div>
             <Image
               alt="Image"
-              className="w-60"
+              className="w-120"
               src="/pencil_small.jpg"
               width= "694"
               height= "1041"
@@ -178,13 +178,12 @@ export default function Page() {
           </div>
     </div>
 
-    <div className="mx-auto text-center mt-6">
+    <div className="mx-auto text-center mt-6 ">
           <Link target="_blank" href="https://buy.stripe.com/cN2aIBaZr2SM2xq8wL">
             <Button variant="outline" className=" text-slate-500 hover:text-slate-800 h-14 border border-slate-300">
-                <span className="ml-4">8 pieces of high quality posters 
+                <span className="ml-4"><span className="font-extrabold">8 pieces</span> of high quality, printable, <span className="font-extrabold">300Dpi, A/3 size posters</span> 
                 <Button variant="outline" className="bg-amber-200 font-extrabold ml-2">24.99€</Button></span>
                 <span className="float-right ml-2">
-                <Link href="">
                       <Image
                         alt="Image"
                         className="float-left w-10 ml-2 opacity-25"
@@ -195,7 +194,6 @@ export default function Page() {
                         objectFit: "cover",
                         }}
                         />
-                </Link>
                 </span>
             </Button>
           </Link>
