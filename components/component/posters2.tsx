@@ -28,82 +28,38 @@ import {
 export function Posters2() {
   return (
 
-    <div className="grid md:grid-cols-5 gap-9 min-h-96 mb-12 p-6 lg:p-9 mx-auto border  border-stone-300 rounded-3xl relative">
+    <div className="grid md:grid-cols-5 gap-9 min-h-96 mb-12 p-6 lg:p-9 mx-auto border  border-stone-300 rounded-3xl relative bg-gradient-to-br from-neutral-900 to-neutral-950">
 
         <Link href="https://clone.utopia.express/" className="absolute right-4 top-6 w-48  rounded-full">
-          <p className="text-xs text-right mr-2 text-stone-600 opacity-25 hover:opacity-100">Series 002 <ArrowIcon/></p>
+          <p className="text-xs text-right mr-2 text-stone-400 opacity-25 hover:opacity-100">Series 002 <ArrowIcon/></p>
         </Link>
 
-        <div className="md:col-span-2">
-            <Carousel>
-                <CarouselContent>
-                    <CarouselItem className="p-9 md:p-12">
-                        <Image
+        <div className="md:col-span-2 p-9">
+                    <Image
                         alt="Image"
                         className="float-left shadow-xl shadow-stone-800/20"
-                        src="/coke_small.jpg"
+                        src="/z2.png"
                         width= "424"
                         height= "600"
                         style={{
                         objectFit: "cover",
                         }}
                         /> 
-                    </CarouselItem>
-                    <CarouselItem className="p-9 md:p-12">
-                        <Image
-                        alt="Image"
-                        className="float-left shadow-xl shadow-stone-800/20"
-                        src="/broccoli_small.jpg"
-                        width= "424"
-                        height= "60"
-                        style={{
-                        objectFit: "cover",
-                        }}
-                        /> 
-                    </CarouselItem>
-                    <CarouselItem className="p-9 md:p-12">
-                        <Image
-                        alt="Image"
-                        className="float-left shadow-xl shadow-stone-800/20"
-                        src="/disco_small.jpg"
-                        width= "424"
-                        height= "60"
-                        style={{
-                        objectFit: "cover",
-                        }}
-                        /> 
-                    </CarouselItem>
-                    <CarouselItem className="p-9 md:p-12">
-                        <Image
-                        alt="Image"
-                        className="float-left shadow-xl shadow-stone-800/20"
-                        src="/honey_small.jpg"
-                        width= "424"
-                        height= "60"
-                        style={{
-                        objectFit: "cover",
-                        }}
-                        /> 
-                    </CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious className="-left-6"/>
-                <CarouselNext className="-right-4"/>
-            </Carousel>
         </div>
 
         <div className="p-6 md:col-span-3 min-h-96 max-w-2xl">
 
-          <div className="mt-12 w-60 text-center py-1 px-3 rounded-full text-xs bg-amber-200 text-stone-700">HQ, 300 Dpi printable Poster Series</div>
+          <div className="mt-12 mb-4 w-60 text-center py-1 px-2 rounded-full text-xs bg-amber-200/10 text-neutral-500">HQ, 300 Dpi printable Poster Series</div>
 
-          <h1 className="pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
-          Sparks of an artificial consciousness
+          <h1 className="pb-6 animate-fade-up bg-gradient-to-br from-white to-amber-100 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
+           The Strange Creatures of D173
           </h1>
-          <p className="pb-6 text-2xl font-normal text-slate-600 text-left">
+          <p className="pb-6 text-2xl font-normal text-neutral-600 text-left">
             Poster series based on the "Sparks of Consciousness"  experiment.   
           </p> 
          
           <Link href="/posters-001">
-            <Button variant="outline" className=" text-slate-500 hover:text-slate-800 h-14 border border-slate-300">
+            <Button variant="outline" className="opacity-40 hover:opacity-100 text-neutral-500 hover:text-neutral-400 h-14 border border-neutral-300">
                 <span className="ml-4">View all <span className="font-extrabold">Printable Posters</span></span>
                 <span className="float-right ml-2">
                 <Button variant="ghost" size="sm">

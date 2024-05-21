@@ -31,7 +31,7 @@ export function Purposes() {
 
 
         <h1 className="py-12 mt-12 animate-fade bg-gradient-to-br from-stone-200 to-stone-100 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">Launch your AI based service</h1>
-        <p className="pb-6 text-xl font-normal text-stone-400 text-center">You bring the idea, I bring the tech. Fully automated, monetizable, rentable systems.</p>
+        <p className="pb-6 text-xl font-normal text-stone-400 text-center">You bring the idea, we bring the tech. Fully automated, monetizable, rentable systems.</p>
    
         <div className="md:w-2/3 mx-auto py-9 mt-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-4 lg:gap-9">
 
@@ -73,12 +73,13 @@ export function Purposes() {
                 <PlusIcon/>
               </span>
               <h1 className="py-4 text-xl leading-5 font-bold text-stone-100">Other use case?</h1>
-              <p className="leading-4 text-sm text-slate-300">I'm just a developer, you probably have more and better ideas</p>
+              <p className="leading-4 text-sm text-slate-300">Everything is possible. Drop us a message and we'll get in touch with you with a personalized offer!</p>
             </div>
   
         </div>
 
         <div className="md:w-full mt-12 p-9 mx-auto bg-stone-900/20 rounded-2xl  text-center text-md font-normal text-slate-400 py-9">
+          
           <p className="text-left pb-4">
             <span className="float-left pt-2 pr-2 scale-150 text-slate-100"><CheckIcon/></span>Personalized AI service for yourself or your business
           </p>
@@ -100,7 +101,7 @@ export function Purposes() {
         <div className="mt-4 mb-6 mx-auto text-center">
           <Link target="_blank" href="https://4me3su0pmsb.typeform.com/to/D1vEjwko">
             <Button variant="outline" className=" text-slate-200 hover:text-slate-800 h-14 w-60">
-                <span className="ml-4">Fill the form for details</span>
+                <span className="ml-4">Launch Your AI Service</span>
                 <span className="float-right ml-2">
                 <Button variant="ghost" size="sm">
                   <ArrowIcon/>

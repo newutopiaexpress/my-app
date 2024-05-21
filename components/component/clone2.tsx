@@ -20,16 +20,16 @@ import { ThreeSteps } from "./three-steps";
 export function Clone2() {
   return (
 
-    <div className="grid md:grid-cols-6 min-h-96 mb-12 p-6 lg:p-9 mx-auto border  border-stone-300 rounded-3xl relative">
+    <div className="grid md:grid-cols-10 min-h-96 mb-12 p-6 lg:p-9 mx-auto border  border-stone-300 rounded-3xl relative bg-gradient-to-br from-sky-100/50 to-red-400/10">
 
         <Link href="https://clone.utopia.express/" className="absolute right-4 top-6 w-48  rounded-full">
           <p className="text-xs text-right mr-2 text-stone-600 opacity-25 hover:opacity-100">clone.utopia.express <ArrowIcon/></p>
         </Link>
 
-        <div className="md:col-span-2">
+        <div className="md:col-span-4">
         <Image
                   alt="Image"
-                  className="float-left"
+                  className="float-right"
                   src="/elf.png"
                   width= "337"
                   height= "600"
@@ -39,12 +39,12 @@ export function Clone2() {
         />
         </div>
 
-        <div className="p-6 md:col-span-4 min-h-96 max-w-2xl">
+        <div className="p-6 md:col-span-6 min-h-96 max-w-2xl">
 
-          <div className="mt-12 w-52 py-1 px-3 rounded-full text-xs bg-red-300 text-stone-800">Highest Quality, from 0.01€/image</div>
+          <div className="mt-12 mb-4 w-60 text-center py-1 px-1 rounded-full text-xs bg-red-300 text-stone-800 opacity-60">Highest Quality, from 0.01€/image</div>
 
-          <h1 className="pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[3rem]">
-          Create a digital clone of anyone
+          <h1 className="pb-6 animate-fade-up bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-start  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-5xl md:leading-[2.6rem]">
+          Create a digital clone of anyone!
           </h1>
           <p className="pb-6 text-2xl font-normal text-slate-600 text-left">
           Upload some photo and take any picture of yourself.    
@@ -55,7 +55,7 @@ export function Clone2() {
               <Button variant="outline" className=" text-slate-500 hover:text-slate-800 h-14 border border-slate-300">
                 <Image
                   alt="Image"
-                  className="float-left rounded-full shadow-md shadow-stone-800/80"
+                  className="float-left rounded-full shadow-md shadow-neutral-800/20"
                   src="/01.png"
                   width= "34"
                   height= "34"
@@ -65,7 +65,7 @@ export function Clone2() {
                 /> 
                 <Image
                   alt="Image"
-                  className="float-left rounded-full ml-1 shadow-md shadow-stone-800/80"
+                  className="float-left rounded-full ml-1 shadow-md shadow-neutral-800/20"
                   src="/02.png"
                   width= "34"
                   height= "34"
@@ -75,7 +75,7 @@ export function Clone2() {
                 />
                 <Image
                   alt="Image"
-                  className="float-left rounded-full ml-1 shadow-md shadow-stone-800/80"
+                  className="float-left rounded-full ml-1 shadow-md shadow-neutral-800/20"
                   src="/04.png"
                   width= "34"
                   height= "34"

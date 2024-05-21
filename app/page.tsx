@@ -13,14 +13,14 @@ import { Purposes } from "@/components/component/purposes";
 import { Separator } from "@/components/ui/separator";
 import { Posters } from "@/components/component/posters";
 import { Posters2 } from "@/components/component/posters2";
-import { PostersTwo } from "@/components/component/posters-two";
+import { PostersCarousel } from "@/components/component/posters-carousel";
 
 
 export default function Home() {
   return (
 
 
-      <div className="overflow-x-hidden w-full md:w-full lg:w-5/6 mx-auto py-6 px-6">
+    <div className="overflow-x-hidden w-full md:w-full lg:w-5/6 mx-auto py-6 px-6">
         <MainHeroV3/>
           <div className="mx-auto lg:w-2/3">
           <Tamas2/>
@@ -64,24 +64,13 @@ export default function Home() {
 
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
           <p className="text-xs uppercase tracking-wider text-stone-400">
-            Poster Series
-            <span className="float-right">2024.02.10</span>
+            Printable Poster Series
+            <span className="float-right">#001 | #002</span>
           </p>
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
 
           <div className="mx-auto lg:w-full">
-          <Posters/>
-          </div>
-
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-          <p className="text-xs uppercase tracking-wider text-stone-400">
-            Poster Series 002
-            <span className="float-right">2023.02.10</span>
-          </p>
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-
-          <div className="mx-auto lg:w-full">
-          <Posters2/>
+            <PostersCarousel/>
           </div>
 
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
@@ -97,6 +86,7 @@ export default function Home() {
 
 
       </div>
+
           
     
   );
