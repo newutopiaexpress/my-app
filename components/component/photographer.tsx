@@ -20,7 +20,8 @@ export function Photographer() {
         <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
             <Link href="https://search.utopia.express" className="" target="_blank">
                 <p className="text-xs uppercase tracking-wider text-stone-400/50 hover:text-stone-800">
-                    <span className="invisible md:visible">AI Photographer</span>
+                    <span className="invisible md:visible">
+                      AI Photographer</span>
                     <span className="float-right">clone.utopia.express <ArrowIcon/></span>
                 </p>
             </Link>
@@ -29,14 +30,14 @@ export function Photographer() {
       
         <div className="animate-fade-up animate-delay-300  transition-all w-full grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
 
-            <div className="flex flex-col place-content-center transition-all relative"> 
+            <div className="flex flex-col transition-all relative"> 
                 
-                <div className="relative mx-auto h-96 mb-12 bg-stone-800 rounded-md">
+                <div className="relative mx-auto bg-stone-800 rounded-md mt-5">
 
                     <Link href="https://search.utopia.express" className="hover:text-stone-700" target="_blank">
-                        <div className="absolute -right-6 bottom-6 text-stone-100">
-                            <h2 className="text-5xl font-extrabold">9<span className="text-sm">€/series</span></h2>
-                            <Badge variant="green" className="text-xs hover:bg-fuchsia-400">Create Photos</Badge>   
+                        <div className="absolute -right-9 bottom-9 text-stone-100">
+                            <h2 className="text-5xl font-extrabold">9<span className="text-sm shadow-md">€/series</span></h2>
+                            <Badge variant="orange" className="text-xs hover:bg-fuchsia-400">Create Photos</Badge>   
                         </div>
                     </Link>
 
@@ -52,32 +53,39 @@ export function Photographer() {
 
             </div> 
 
-            <div className="p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all rounded-3xl relative content-center"> 
+            <div className="text-stone-500  p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all rounded-3xl relative content-center"> 
 
                 <h1 className="pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text text-left  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
-                <span className="">AI Photographer</span>
+                  <span className="relative text-center align-top pt-0 pb-1 pl-3 pr-5 mr-2 bg-stone-800 rounded-md text-stone-100 shadow-md shadow-stone-900/30">
+                    <span className="animate-pulse w-2 h-2 bg-amber-500 absolute top-2 right-2 rounded-full"></span>
+                    Ai
+                  </span> 
+                    Photographer
                 </h1>
-                <p className="text-lg text-stone-400 max-w-[300px] mt-2">Stunningly lifelike photos, as if taken by a professional photographer.</p>
+                <p className="text-xl max-w-[390px] mt-4">Stunningly lifelike photos, as if taken by a professional photographer.</p>
                 
-                <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full md:w-5/6 pt-6 text-stone-600 text-center">
-                <div className="pt-4 text-left p-4 w-full md:w-44 h-44 transition-all relative mb-6 rounded-2xl hover:shadow-xl hover:shadow-rose-800/10">
-                    <UploadIcon/>
-                    <p className="pt-4 text-lg leading-6">
-                        <span className="font-normal text-stone-400 hover:text-slate-500">Understands what you need & helps refine your search</span>
-                    </p>
-                </div>
-                <div className="pt-4 text-left p-4 w-44 h-44 transition-all relative mb-6 rounded-2xl hover:shadow-xl hover:shadow-amber-800/10">
-                    <TrainingIcon/>
-                    <p className="pt-2 text-lg leading-6"> 
-                        <span className="font-normal text-stone-400 hover:text-slate-500">Collects data in real time & process the result</span>
-                    </p>
-                </div>
-                <div className="pt-4 text-left p-4 w-44 h-44 transition-all relative mb-6 rounded-2xl hover:shadow-xl hover:shadow-lime-800/10">
-                    <GenerateIcon/>
-                    <p className="pt-2 text-lg leading-6">
-                        <span className="font-normal text-stone-400 hover:text-slate-500">Chat with an excerpt about the results</span>
-                    </p>
-                </div>
+                <div className="gap-6 grid grid-cols-1 md:grid-cols-3 md:gap-9 w-full pt-6 text-stone-500 text-center">
+                  <div className="pt-4 text-left  transition-all relative mb-6 rounded-2xl hover:shadow-xl hover:shadow-rose-800/10">
+                      <ScanIcon/>
+                      <p className="pt-2 text-sm leading-5">
+                          <span className="font-normal hover:text-slate-500">Upload some portraits and let the magic begin!</span>
+                      </p>
+                  </div>
+                  <div className="pt-4 text-left transition-all relative mb-6 rounded-2xl hover:shadow-xl hover:shadow-amber-800/10">
+                      <GenerateIcon/>
+                      <p className="pt-2 text-sm leading-5"> 
+                          <span className="font-normal hover:text-slate-500">Our AI model able to learn, and reconstruct your characteristic.</span>
+                      </p>
+                  </div>
+                  <div className="relative pt-4 text-left transition-all mb-6 rounded-2xl hover:shadow-xl hover:shadow-lime-800/10">
+                      <span className="scale-75 absolute left-7 top-2 bg-yellow-500 text-stone-100 pl-2 pr-2  font-extrabold rounded-full shadow-md">
+                        +24
+                      </span>
+                      <TrainingIcon/>
+                      <p className="pt-2 text-sm leading-5">
+                          <span className="font-normal hover:text-slate-500">Get your professional portraits! One serie contain 24 photos in 3 different style.</span>
+                      </p>
+                  </div>
                 </div>
 
             </div>        
@@ -91,10 +99,11 @@ export function Photographer() {
 
 
 
-function UploadIcon() {
+function ScanIcon() {
   return (
-<svg className="w-10 h-10 stroke-stone-400 text-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
-<path strokeLinecap="round" strokeLinejoin="round" d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+<svg className="w-12 h-12 stroke-stone-400 text-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
 </svg>
 
   )
@@ -103,20 +112,18 @@ function UploadIcon() {
 
 function GenerateIcon() {
   return (
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-10 h-10 stroke-stone-400 text-left">
-<path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+<svg className="w-12 h-11 stroke-stone-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" />
 </svg>
-
-
   )
 }
 
 function TrainingIcon() {
   return (
-<svg className=" animate-spin p-1 h-10 w-10 text-white text-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-<circle className="stroke-emerald-400" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-<path className=" fill-stone-300" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+<svg className="w-12 h-11 stroke-stone-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
 </svg>
+
   )
 }
 
@@ -130,23 +137,12 @@ function ArrowIcon() {
 }
 
 
-function MergeIcon() {
+function LoveIcon() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 6 4-4 4 4" />
-      <path d="M12 2v10.3a4 4 0 0 1-1.172 2.872L4 22" />
-      <path d="m20 22-5-5" />
-    </svg>
+  <svg className="w-12 h-11 stroke-stone-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+</svg>
+
   )
 }
 

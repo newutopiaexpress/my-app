@@ -8,6 +8,8 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
+        orange:
+          "pt-1 pb-1 pl-4 pr-4 mr-0 rounded-full border-transparent bg-amber-500 text-stone-100 shadow-md",
         green:
           "pt-1 pb-1 pl-4 pr-4 mr-0 rounded-full border-transparent bg-emerald-500 text-yellow-100 shadow-md",
         secondary:

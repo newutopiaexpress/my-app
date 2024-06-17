@@ -37,27 +37,6 @@ export default function Home() {
             <Photographer/>
           </div>
 
-          <div className="mx-auto lg:w-full">
-          <Clone3/>
-          </div> 
-
-
-          <div className="mx-auto lg:w-full">
-          <Launch/>
-          </div> 
-
-
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-          <p className="text-xs uppercase tracking-wider text-stone-400">
-            Printable Poster Series
-            <span className="float-right">#001 | #002</span>
-          </p>
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-
-          <div className="mx-auto lg:w-full">
-            <PostersCarousel/>
-          </div>
-
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
           <p className="text-xs uppercase tracking-wider text-stone-400">
             Uplifting Music on youtube
