@@ -15,7 +15,7 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,6 +54,7 @@ export default function RootLayout({ children }: any) {
               gtag('config', ${'${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'});
           `}
         </Script>
+        <Analytics/>
       </head>
       <body className="scroll-smooth overflow-x-hidden	min-h-screen bg-background bg-fixed font-sans antialiased bg-gradient-to-tl from-red-100 to-slate-200">
         <section>

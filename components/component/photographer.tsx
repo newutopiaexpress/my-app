@@ -28,16 +28,16 @@ export function Photographer() {
         <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
 
       
-        <div className="animate-fade-up animate-delay-300  transition-all w-full grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+        <div className="animate-fade-up animate-delay-300 mt-12 transition-all w-full grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
 
             <div className="flex flex-col transition-all relative"> 
                 
-                <div className="relative mx-auto bg-stone-800 rounded-md mt-5">
+                <div className="relative mx-auto bg-stone-400 rounded-md mt-5">
 
                     <Link href="https://search.utopia.express" className="hover:text-stone-700" target="_blank">
-                        <div className="absolute -right-9 bottom-9 text-stone-100">
+                        <div className="absolute -right-9 bottom-9 text-stone-100 z-50">
                             <h2 className="text-5xl font-extrabold">9<span className="text-sm shadow-md">€/series</span></h2>
-                            <Badge variant="orange" className="text-xs hover:bg-fuchsia-400">Create Photos</Badge>   
+                            <Badge variant="rose" className="text-xs">Create Photos</Badge>   
                         </div>
                     </Link>
 
@@ -46,7 +46,7 @@ export function Photographer() {
                         alt="AI Photographer"
                         width={901}
                         height={1168}
-                        className="cover shadow-xl shadow-indigo-950/50 rounded-md">
+                        className="duration-400 transition-all cover -rotate-2 hover:rotate-1 shadow-xl shadow-indigo-950/50 rounded-md">
                     </Image>
 
                 </div>   
@@ -57,7 +57,7 @@ export function Photographer() {
 
                 <h1 className="pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text text-left  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
                   <span className="relative text-center align-top pt-0 pb-1 pl-3 pr-5 mr-2 bg-stone-800 rounded-md text-stone-100 shadow-md shadow-stone-900/30">
-                    <span className="animate-pulse w-2 h-2 bg-amber-500 absolute top-2 right-2 rounded-full"></span>
+                    <span className="animate-pulse w-2 h-2 bg-rose-500 absolute top-2 right-2 rounded-full"></span>
                     Ai
                   </span> 
                     Photographer
@@ -65,25 +65,25 @@ export function Photographer() {
                 <p className="text-xl max-w-[390px] mt-4">Stunningly lifelike photos, as if taken by a professional photographer.</p>
                 
                 <div className="gap-6 grid grid-cols-1 md:grid-cols-3 md:gap-9 w-full pt-6 text-stone-500 text-center">
-                  <div className="pt-4 text-left  transition-all relative mb-6 rounded-2xl hover:shadow-xl hover:shadow-rose-800/10">
+                  <div className="pt-4 text-left  transition-all relative mb-6">
                       <ScanIcon/>
                       <p className="pt-2 text-sm leading-5">
-                          <span className="font-normal hover:text-slate-500">Upload some portraits and let the magic begin!</span>
+                          <span className="font-normal">Upload some portraits and let the magic begin!</span>
                       </p>
                   </div>
-                  <div className="pt-4 text-left transition-all relative mb-6 rounded-2xl hover:shadow-xl hover:shadow-amber-800/10">
+                  <div className="pt-4 text-left transition-all relative mb-6">
                       <GenerateIcon/>
                       <p className="pt-2 text-sm leading-5"> 
-                          <span className="font-normal hover:text-slate-500">Our AI model able to learn, and reconstruct your characteristic.</span>
+                          <span className="font-normal">Our AI model able to learn, and reconstruct your characteristic.</span>
                       </p>
                   </div>
-                  <div className="relative pt-4 text-left transition-all mb-6 rounded-2xl hover:shadow-xl hover:shadow-lime-800/10">
-                      <span className="scale-75 absolute left-7 top-2 bg-yellow-500 text-stone-100 pl-2 pr-2  font-extrabold rounded-full shadow-md">
+                  <div className="relative pt-4 text-left transition-all mb-6">
+                      <span className="scale-75 absolute left-7 top-2 bg-rose-500 text-stone-100 pl-2 pr-2  font-extrabold rounded-full shadow-md">
                         +24
                       </span>
                       <TrainingIcon/>
                       <p className="pt-2 text-sm leading-5">
-                          <span className="font-normal hover:text-slate-500">Get your professional portraits! One serie contain 24 photos in 3 different style.</span>
+                          <span className="font-normal">Get your professional portraits! One serie contain 24 photos in 3 different style.</span>
                       </p>
                   </div>
                 </div>

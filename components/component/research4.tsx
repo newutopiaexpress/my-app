@@ -20,7 +20,7 @@ export function Research4() {
         <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
             <Link href="https://search.utopia.express" className="" target="_blank">
                 <p className="text-xs uppercase tracking-wider text-stone-400/50 hover:text-stone-800">
-                    <span className="invisible md:visible">Multi Agent Research Assistant</span>
+                    <span className="invisible md:visible">Research & Write</span>
                     <span className="float-right">search.utopia.express <ArrowIcon/></span>
                 </p>
             </Link>
@@ -32,27 +32,27 @@ export function Research4() {
           <div className="p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all rounded-3xl relative"> 
 
             <h1 className="pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text text-left  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
-              <span className="">Research & Writer Assistant for Content Creators</span>
+              <span className="">Research & Writer Assistant</span>
             </h1>
-            <p className="text-lg text-stone-400 max-w-[480px]">Cooperation of three autonomous agents to make your work more fun & efficient.</p>
+            <p className="text-lg text-stone-500 max-w-[480px]">For Content Creators! Cooperation of three autonomous AI agents to make your work more fun & efficient.</p>
             
-            <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full md:w-5/6 pt-6 text-stone-600 text-center">
-              <div className="pt-4 text-left p-4 w-full md:w-44 h-44 transition-all relative mb-6 rounded-2xl hover:shadow-xl hover:shadow-rose-800/10">
+            <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full md:gap-9 pt-6 text-stone-600 text-center">
+              <div className="pt-4 text-left transition-all relative mb-6 ">
                 <UploadIcon/>
-                <p className="pt-4 text-lg leading-6">
-                    <span className="font-normal text-stone-400 hover:text-slate-500">Understands what you need & helps refine your search</span>
+                <p className="pt-4 text-sm leading-5">
+                    <span className="font-normal text-stone-500">Understands what you need & helps refine your search</span>
                 </p>
               </div>
-              <div className="pt-4 text-left p-4 w-44 h-44 transition-all relative mb-6 rounded-2xl hover:shadow-xl hover:shadow-amber-800/10">
+              <div className="pt-4 text-left transition-all relative mb-6 ">
                 <TrainingIcon/>
-                <p className="pt-2 text-lg leading-6"> 
-                    <span className="font-normal text-stone-400 hover:text-slate-500">Collects data in real time & process the result</span>
+                <p className="pt-2 text-sm leading-5"> 
+                    <span className="font-normal text-stone-500">Collects data in real time & process the result</span>
                 </p>
               </div>
-              <div className="pt-4 text-left p-4 w-44 h-44 transition-all relative mb-6 rounded-2xl hover:shadow-xl hover:shadow-lime-800/10">
+              <div className="pt-4 text-left transition-all relative mb-6">
                 <GenerateIcon/>
-                <p className="pt-2 text-lg leading-6">
-                    <span className="font-normal text-stone-400 hover:text-slate-500">Chat with an excerpt about the results</span>
+                <p className="pt-2 text-sm leading-5">
+                    <span className="font-normal text-stone-500">Chat with an excerpt about the results</span>
                 </p>
               </div>
             </div>
