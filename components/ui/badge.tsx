@@ -8,8 +8,8 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
-        default:
-          "mr-0 rounded-full border-transparent bg-fuchsia-400	hover:bg-fuchsia-300 text-slate-50",
+        green:
+          "pt-1 pb-1 pl-4 pr-4 mr-0 rounded-full border-transparent bg-emerald-500 text-yellow-100 shadow-md",
         secondary:
           "shadow-lg shadow-fuchsia-600/50 rounded-full border-0 bg-gradient-to-br from-fuchsia-400 to-purple-600 hover:bg-gradient-to-br hover:from-fuchsia-500 hover:to-purple-500 text-slate-200",
         destructive:

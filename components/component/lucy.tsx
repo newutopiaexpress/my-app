@@ -44,7 +44,7 @@ export function Lucy() {
 
           <div className="w-128 h-128 float-left">
             <h1 className="animate-fade-up bg-gradient-to-br from-lime-800 to-lime-700 bg-clip-text text-start  font-extrabold tracking-tight text-transparent drop-shadow-sm [text-wrap:balance] text-4xl md:text-3xl pb-4">
-              Meet Lucy
+              Utopia Research Assistant
             </h1>
             <h1 className="animate-fade-up bg-gradient-to-br from-lime-100 to-slate-100 bg-clip-text text-left  text-transparent drop-shadow-sm [text-wrap:balance] text-3xl md:text-3xl md:leading-[3rem]">
               Your research assistant

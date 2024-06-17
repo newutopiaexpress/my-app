@@ -1,10 +1,10 @@
 "use client"
-import { Research } from "@/components/component/research";
+import { Research4 } from "@/components/component/research4";
 import { Tamas } from "@/components/component/tamas";
 import { MainHeroV3 } from "@/components/component/main-hero-v3";
 import { Youtube } from "../components/component/youtube";
 import { Lucy } from "@/components/component/lucy";
-import { Clone2 } from "@/components/component/clone2";
+import { Clone3 } from "@/components/component/clone3";
 import { Contact } from "@/components/component/contact";
 import { Tamas2 } from "@/components/component/tamas2";
 import { ThreeSteps } from "@/components/component/three-steps";
@@ -14,53 +14,38 @@ import { Separator } from "@/components/ui/separator";
 import { Posters } from "@/components/component/posters";
 import { Posters2 } from "@/components/component/posters2";
 import { PostersCarousel } from "@/components/component/posters-carousel";
-
+import { Launch } from "@/components/component/launch";
+import Link from "next/link";
+import { Hero } from "@/components/component/hero";
+import { Photographer } from "@/components/component/photographer";
 
 export default function Home() {
   return (
 
 
-    <div className="overflow-x-hidden w-full md:w-full lg:w-5/6 mx-auto py-6 px-6">
-        <MainHeroV3/>
-          <div className="mx-auto lg:w-2/3">
-          <Tamas2/>
+    <div className="overflow-x-hidden w-full md:w-5/6 lg:w-3/4 mx-auto py-6 px-2 md:px-6">
+       
+          <div className="mx-auto lg:w-full">
+          <Hero/>
           </div>
-          <div className="mx-auto lg:w-full">
-          
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-          <p className="text-xs uppercase tracking-wider text-stone-400">
-            Personalized, rentable AI services
-            <span className="float-right">2024.05.01</span>
-          </p>
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-
-          <Purposes/>
-          </div> 
-
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-          <p className="text-xs uppercase tracking-wider text-stone-400">
-            AI based fine tuning service
-            <span className="float-right">2024.05.10</span>
-          </p>
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-
 
           <div className="mx-auto lg:w-full">
-          <Clone2/>
+          <Research4/> 
+          </div>
+
+          <div className="mx-auto lg:w-full">
+            <Photographer/>
+          </div>
+
+          <div className="mx-auto lg:w-full">
+          <Clone3/>
           </div> 
 
 
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-          <p className="text-xs uppercase tracking-wider text-stone-400">
-            Multi Agent Research Assistant
-            <span className="float-right">2024.05.10</span>
-          </p>
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-
-
           <div className="mx-auto lg:w-full">
-          <Research/> 
-          </div>
+          <Launch/>
+          </div> 
+
 
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
           <p className="text-xs uppercase tracking-wider text-stone-400">
@@ -90,4 +75,13 @@ export default function Home() {
           
     
   );
+}
+
+
+function ArrowIcon() {
+  return (
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+<path fillRule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clipRule="evenodd" />
+</svg>
+  )
 }

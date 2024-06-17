@@ -13,14 +13,14 @@ import Link from "next/link";
 import React from "react"; 
 
 
-export function Research() {
+export function Research2() {
   return (
     <div className="mt-12 mb-9">
 
       
-        <div className="transition-all w-full grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4 border-stone-300 rounded-3xl bg-emerald-500 shadow-xl hover:shadow-lime-800/40 hover:shadow-lg shadow-lime-700/30">
+        <div className="animate-fade-up animate-delay-300  transition-all w-full grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
 
-          <div className="p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all  relative"> 
+          <div className="p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all bg-emerald-500 rounded-3xl relative shadow-xl hover:shadow-lime-800/40 hover:shadow-lg shadow-lime-700/30"> 
 
             <h1 className="pb-2 pt-2 animate-fade text-left text-stone-700 font-bold tracking-tight drop-shadow-sm [text-wrap:balance] text-2xl md:text-3xl md:leading-[4rem]">
               <span className="bg-gradient-to-br from-lime-100 to-slate-100 bg-clip-text text-transparent">Utopia Research Assistant</span>
@@ -47,7 +47,7 @@ export function Research() {
 
           </div>
 
-          <div className="mt-6 p-6 flex flex-col transition-all bg-transparent relative"> 
+          <div className=" rounded-2xl p-6 flex flex-col transition-all  relative"> 
             
             <Link href="https://search.utopia.express" className="absolute right-4 top-0 w-48  rounded-full">
               <p className="text-xs text-right text-stone-100 opacity-50 hover:opacity-100">search.utopia.express <ArrowIcon/></p>
@@ -72,7 +72,7 @@ export function Research() {
               />
             </div>
 
-            <p className="h-14 text-sm text-slate-100 ">
+            <p className="h-14 text-sm text-stone-800 ">
               <Typewriter
                 options={{
                   loop: true,
@@ -95,7 +95,7 @@ export function Research() {
             </p>
 
             <Link target="_blank" href="https://search.utopia.express">
-              <Button variant="outline" className=" text-lime-100 hover:text-slate-800 h-14 shadow-xl">
+              <Button variant="outline" className=" text-stone-800 hover:text-slate-800 h-14 shadow-xl">
                   <Badge variant="default">Try out for FREE</Badge>
                   <span className="ml-4">search.utopia.express</span>
                   <span className="float-right ml-2">

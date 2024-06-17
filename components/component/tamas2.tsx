@@ -37,31 +37,15 @@ import {
 
 export function Tamas2() {
   return (
-    <div className="mb-9 mt-6 bg-transparent mx-auto shadow-none border-0">
+    <div className="bg-transparent mx-auto shadow-none  h-96 content-center">
 
-          <div className="">
-           
-            <Image
-                    alt="Image"
-                    className="w-96 shadow-none mx-auto object-cover border-none bg-transparent"
-                    src="/fear.png"
-                    width= "565"
-                    height= "800"
-                    style={{
-                    objectFit: "cover",
-                    }}
-            />
 
-            <p className="py-6 animate-fade-up animate-delay-300 tracking-wide text-2xl text-stone-500 dark:text-gray-100 transparent text-center">Prevent the Existential Crisis</p>
-            <Separator orientation="vertical" className="h-16 w-px mt-2 mb-2 bg-stone-300 mx-auto"/>
-            <h1 className="py-6 animate-fade bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
-            Hop on the Utopia Express! 
-            </h1>
+            <h1 className="bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">Prevent the Existential Crisis</h1>
+            
 
-            <p className="py-6 animate-fade-up animate-delay-300 tracking-wide md:w-5/6 mx-auto text-2xl text-stone-500 dark:text-gray-100 transparent text-center">Here you will find some tools that will make your Journey into the Singularity much smoother</p>
-            <Separator orientation="vertical" className="h-16 w-px mt-2 mb-2 bg-stone-300 mx-auto"/> 
-
-          </div>
+            <p className="py-6 animate-fade-up animate-delay-300 tracking-wide md:w-5/6 mx-auto text-2xl text-stone-500 dark:text-gray-100 transparent text-center">Get some tools that will make your 
+            <span className="drop-shadow-sm tracking-tight font-bold  italic bg-clip-text text-transparent bg-gradient-to-br from-stone-700 to-stone-300 "> Journey into the Singularity</span> much smoother</p>
+          
 
     </div>
   )
