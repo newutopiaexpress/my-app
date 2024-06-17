@@ -96,7 +96,7 @@ export function Research() {
 
             <Link target="_blank" href="https://search.utopia.express">
               <Button variant="outline" className=" text-lime-100 hover:text-slate-800 h-14 shadow-xl">
-                  <Badge variant="default">Try out for FREE</Badge>
+                  <Badge variant="secondary">Try out for FREE</Badge>
                   <span className="ml-4">search.utopia.express</span>
                   <span className="float-right ml-2">
                   <Button variant="ghost" size="sm">
