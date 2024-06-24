@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <div className="bg-transparent mx-auto w-full mt-12 mb-12">
           <p className="tracking-wide text-center text-md text-stone-400">
-            🛰️ Practical tools that make the <span className="font-bold bg-gradient-to-br from-stone-800 to-stone-300 shadow-sm bg-clip-text text-center tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-lg  md:leading-[4rem] ">Journey into the Singularity</span> much smoother
+            Futuristic tools that make your <span className="font-bold bg-gradient-to-br from-stone-800 to-stone-300 shadow-sm bg-clip-text text-center tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-lg  md:leading-[4rem] ">Journey into the Singularity</span> much smoother
           </p>     
     </div>
   )

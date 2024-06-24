@@ -13,84 +13,66 @@ import Link from "next/link";
 import React from "react"; 
 
 
-export function Research4() {
+export function Voice() {
   return (
     <div>
 
-
             <Link href="https://search.utopia.express" className="" target="_blank">
                 <p className="text-[10px] uppercase tracking-wider text-stone-400 hover:text-stone-800">
-                    <span className="invisible md:visible">Gpt-4o + Anthropic Claude</span>
-                    <span className="float-right">search.utopia.express <ArrowIcon/></span>
+                    <span className="invisible md:visible">Hume.ai</span>
+                    <span className="float-right">voice.utopia.express<ArrowIcon/></span>
                 </p>
             </Link>
         <Separator className="w-full h-px bg-stone-500/10 mt-4 mb-4"/>
 
       
-        <div className="animate-fade-up animate-delay-300 transition-all w-full grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+        <div className="animate-fade-up animate-delay-300  transition-all w-full grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
 
           <div className="p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all rounded-3xl relative"> 
             <h1 className="pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text text-left  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
-             Research & Writer Assistant for Content Creators
+             Empathic Voice Assistants
             </h1>
-            <p className="text-2xl text-stone-500 max-w-[480px]">Cooperation of three autonomous AI agents to make your work more fun & efficient.</p>
+            <p className="text-lg text-stone-500 max-w-[480px]">AI voice that responds empathically. Built with Hume.ai align technology for human well-being.</p>
             
             <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full md:gap-9 pt-6 text-stone-600 text-center">
-              <div className="pt-4 text-left transition-all relative mb-6 ">
-                <UploadIcon/>
+              <div className="pt-4 text-center transition-all relative mb-6 ">
+                <Image 
+                src="/lucy2.png" 
+                alt="Voice Assistant" 
+                width={200} height={200} 
+                className="rounded-full w-20 h-20 mx-auto"
+                />
                 <p className="pt-4 text-sm leading-5">
-                    <span className="font-normal text-stone-500">Understands what you need & helps refine your search</span>
+                    <span className="font-normal text-stone-500">English Tutor</span>
                 </p>
               </div>
-              <div className="pt-4 text-left transition-all relative mb-6 ">
-                <TrainingIcon/>
-                <p className="pt-2 text-sm leading-5"> 
-                    <span className="font-normal text-stone-500">Collects data in real time & process the result</span>
+              <div className="pt-4 text-center transition-all relative mb-6">
+                <Image 
+                src="/kontotamas2.png" 
+                alt="Voice Assistant" 
+                width={200} height={200} 
+                className="rounded-full w-20 h-20 mx-auto"
+                />
+                <p className="pt-4 text-sm leading-5"> 
+                    <span className="font-normal text-stone-500">Motivational Coach</span>
                 </p>
               </div>
-              <div className="pt-4 text-left transition-all relative mb-6">
-                <GenerateIcon/>
-                <p className="pt-2 text-sm leading-5">
-                    <span className="font-normal text-stone-500">Chat with an excerpt about the results</span>
-                </p>
-              </div>
+
             </div>
 
           </div>
 
           <div className="flex flex-col place-content-center transition-all relative"> 
             
-            <div className="relative mx-auto shadow-2xl shadow-indigo-900/40 h-96 w-64 mb-6 bg-gradient-to-r from-stone-100 to-stone-50 rounded-2xl p-6 ring-offset-0 ring-8 ring-stone-100/80">
-                <div className="relative w-12 h-12">
-                    <div className="absolute">
-                        <span className="relative flex h-2 w-2">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-stone-700 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-stone-700/10"></span>
-                        </span>
-                    </div>
-                </div>
-                <p className="h-28 text-2xl font-extrabold italic text-stone-700">
-                    <Typewriter
-                    options={{
-                    loop: true,
-                    delay: 50,
-                    }}
-                    onInit={(typewriter) => {
-                    typewriter
-                        .typeString('Collect information about the technological singularity')
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString('Write a blog post based on the information gained')
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .start();
-                    }}
-                    />
-                </p>
-                <Link href="https://search.utopia.express" className="hover:text-stone-700" target="_blank">
+            <div className="relative content-center mx-auto shadow-2xl shadow-indigo-900/40 h-64 w-64 mb-6 bg-gradient-to-r from-stone-100 to-stone-50 rounded-full p-6 ring-offset-0 ring-8 ring-stone-100/80">
+                
+
+                <PhoneIcon/>
+
+                <Link href="https://voice.utopia.express" className="hover:text-stone-700" target="_blank">
                     <div className="absolute -left-6 bottom-9">
-                        <h2 className="text-5xl font-extrabold">9<span className="text-sm">€/month</span></h2>
-                        <Badge variant="green" className="text-lg hover:bg-emerald-400">Try out now!</Badge>   
+                        <h2 className="text-5xl font-extrabold">29<span className="text-sm">€/month</span></h2>
+                        <Badge variant="voice" className="text-lg hover:bg-emerald-400">Call now!</Badge>   
                     </div>
                 </Link>
 
@@ -109,7 +91,7 @@ export function Research4() {
 
 function UploadIcon() {
   return (
-<svg className="w-10 h-10 text-emerald-400 text-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
+<svg className="w-10 h-10 stroke-stone-400 text-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
 <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
 </svg>
 
@@ -119,7 +101,7 @@ function UploadIcon() {
 
 function GenerateIcon() {
   return (
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-10 h-10 text-emerald-400 text-left">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-10 h-10 stroke-stone-400 text-left">
 <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
 </svg>
 
@@ -127,12 +109,13 @@ function GenerateIcon() {
   )
 }
 
-function TrainingIcon() {
+function PhoneIcon() {
   return (
-<svg className=" animate-spin p-1 h-10 w-10 text-white text-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-<circle className="stroke-emerald-500" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-<path className=" fill-stone-300" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="mx-auto w-28 h-28 text-stone-800">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
 </svg>
+
+
   )
 }
 

@@ -17,32 +17,31 @@ export function Photographer() {
   return (
     <div className="mb-16">
 
-        <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+
             <Link href="https://search.utopia.express" className="" target="_blank">
-                <p className="text-xs uppercase tracking-wider text-stone-400/50 hover:text-stone-800">
-                    <span className="invisible md:visible">
-                      AI Photographer</span>
+                <p className="text-[10px] uppercase tracking-wider text-stone-400 hover:text-stone-800">
+                    <span className="invisible md:visible">AI Photographer</span>
                     <span className="float-right">clone.utopia.express <ArrowIcon/></span>
                 </p>
             </Link>
-        <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
+        <Separator className="w-full h-px bg-stone-500/10 mt-4 mb-4"/>
 
       
         <div className="animate-fade-up animate-delay-300 mt-12 transition-all w-full grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
 
             <div className="flex flex-col transition-all relative"> 
                 
-                <div className="relative mx-auto bg-stone-400 rounded-md mt-5">
+                <div className="relative mx-auto bg-stone-900 rounded-md mt-5">
 
                     <Link href="https://search.utopia.express" className="hover:text-stone-700" target="_blank">
-                        <div className="absolute -right-9 bottom-9 text-stone-100 z-50">
-                            <h2 className="text-5xl font-extrabold">9<span className="text-sm shadow-md">€/series</span></h2>
-                            <Badge variant="rose" className="text-xs">Create Photos</Badge>   
+                        <div className="absolute -right-9 bottom-14 text-stone-100 z-50">
+                            <h2 className="text-5xl font-extrabold text-center">9<span className="text-sm shadow-md">€/series</span></h2>
+                            <Badge variant="rose" className="text-lg">Get Your Portraits!</Badge>   
                         </div>
                     </Link>
 
                     <Image
-                        src="/v6.jpg"
+                        src="/v0.png"
                         alt="AI Photographer"
                         width={901}
                         height={1168}
@@ -53,41 +52,42 @@ export function Photographer() {
 
             </div> 
 
-            <div className="text-stone-500  p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all rounded-3xl relative content-center"> 
+            <div className="text-stone-500  p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all rounded-3xl relative"> 
 
-                <h1 className="pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text text-left  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
-                  <span className="relative text-center align-top pt-0 pb-1 pl-3 pr-5 mr-2 bg-stone-800 rounded-md text-stone-100 shadow-md shadow-stone-900/30">
-                    <span className="animate-pulse w-2 h-2 bg-rose-500 absolute top-2 right-2 rounded-full"></span>
-                    Ai
-                  </span> 
-                    Photographer
-                </h1>
-                <p className="text-xl max-w-[390px] mt-4">Stunningly lifelike photos, as if taken by a professional photographer.</p>
-                
-                <div className="gap-6 grid grid-cols-1 md:grid-cols-3 md:gap-9 w-full pt-6 text-stone-500 text-center">
-                  <div className="pt-4 text-left  transition-all relative mb-6">
-                      <ScanIcon/>
-                      <p className="pt-2 text-sm leading-5">
-                          <span className="font-normal">Upload some portraits and let the magic begin!</span>
-                      </p>
-                  </div>
-                  <div className="pt-4 text-left transition-all relative mb-6">
-                      <GenerateIcon/>
-                      <p className="pt-2 text-sm leading-5"> 
-                          <span className="font-normal">Our AI model able to learn, and reconstruct your characteristic.</span>
-                      </p>
-                  </div>
-                  <div className="relative pt-4 text-left transition-all mb-6">
-                      <span className="scale-75 absolute left-7 top-2 bg-rose-500 text-stone-100 pl-2 pr-2  font-extrabold rounded-full shadow-md">
-                        +24
-                      </span>
-                      <TrainingIcon/>
-                      <p className="pt-2 text-sm leading-5">
-                          <span className="font-normal">Get your professional portraits! One serie contain 24 photos in 3 different style.</span>
-                      </p>
-                  </div>
-                </div>
-
+                    <h1 className="pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text text-left  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
+                      <span className="relative text-center align-top pt-0 pb-1 pl-3 pr-5 mr-2 bg-gradient-to-b from-stone-700 to-stone-800 rounded-2xl text-stone-100 shadow-lg ring-4 ring-stone-700 shadow-stone-900/30">
+                        <span className="animate-pulse w-2 h-2 bg-rose-300 absolute top-2 right-2 rounded-full"></span>
+                        Ai
+                      </span> 
+                        Photographer
+                    </h1>
+                    <p className="text-2xl max-w-[390px] mt-9">Stunningly lifelike photos, as if taken by a professional photographer.</p>
+                    
+                    <div className="gap-6 grid grid-cols-1 md:grid-cols-3 md:gap-9 w-full pt-6 text-stone-500 text-center">
+                    
+                      <div className="pt-4 text-left  transition-all relative mb-6">
+                          <ScanIcon/>
+                          <p className="pt-2 text-sm leading-5">
+                              <span className="font-normal">Upload some portraits and let the magic begin!</span>
+                          </p>
+                      </div>
+                      <div className="pt-4 text-left transition-all relative mb-6">
+                          <GenerateIcon/>
+                          <p className="pt-2 text-sm leading-5"> 
+                              <span className="font-normal">Our AI model able to learn, and reconstruct your characteristic.</span>
+                          </p>
+                      </div>
+                      
+                      <div className="relative pt-4 text-left transition-all mb-6">
+                          <span className="absolute left-7 top-2 bg-rose-500 text-stone-100 pl-2 pr-2  font-extrabold rounded-full shadow-md">
+                            +24
+                          </span>
+                          <TrainingIcon/>
+                          <p className="pt-2 text-sm leading-5">
+                              <span className="font-normal">One serie contain 24 photos in 3 different style.</span>
+                          </p>
+                      </div>
+                    </div>
             </div>        
 
         </div>
@@ -137,14 +137,7 @@ function ArrowIcon() {
 }
 
 
-function LoveIcon() {
-  return (
-  <svg className="w-12 h-11 stroke-stone-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-</svg>
 
-  )
-}
 
 
 

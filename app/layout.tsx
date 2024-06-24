@@ -57,11 +57,13 @@ export default function RootLayout({ children }: any) {
         <Analytics/>
       </head>
       <body className="scroll-smooth overflow-x-hidden	min-h-screen bg-background bg-fixed font-sans antialiased bg-gradient-to-tl from-red-100 to-slate-200">
+        
         <section>
             <Suspense fallback={<div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between h-[69px]" />}>
               <NavBar />
             </Suspense>
         </section>
+        
         <main>
         {children}
         <FooterV2/>

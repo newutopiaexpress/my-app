@@ -18,6 +18,7 @@ import { Launch } from "@/components/component/launch";
 import Link from "next/link";
 import { Hero } from "@/components/component/hero";
 import { Photographer } from "@/components/component/photographer";
+import { Voice } from "@/components/component/voice";
 
 export default function Home() {
   return (
@@ -29,12 +30,16 @@ export default function Home() {
           <Hero/>
           </div>
 
-          <div className="mx-auto lg:w-full">
+          <div className="py-9 mx-auto lg:w-full">
           <Research4/> 
           </div>
 
-          <div className="mx-auto lg:w-full">
+          <div className="py-9 mx-auto lg:w-full">
             <Photographer/>
+          </div>
+
+          <div className="py-9 mx-auto lg:w-full">
+            <Voice/>
           </div>
 
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
