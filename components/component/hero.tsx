@@ -11,7 +11,7 @@ export function Hero() {
           <p className="pb-4 tracking-wide text-center text-md text-stone-400">
             Futuristic tools that make your <span className="font-bold bg-gradient-to-br from-stone-800 to-stone-300 shadow-sm bg-clip-text text-center tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-lg  md:leading-[4rem] ">Journey into the Singularity</span> much smoother
           </p>  
-          <iframe className="mx-auto rounded-2xl shadow-2xl" width="560" height="315" src="https://www.youtube.com/embed/1sQCcBb_Kyw?si=DmTsvnctvaHsoueS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          <iframe className="mx-auto rounded-2xl shadow-2xl w-full" width="560" height="315" src="https://www.youtube.com/embed/1sQCcBb_Kyw?si=DmTsvnctvaHsoueS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
     </div>
   )
 }
