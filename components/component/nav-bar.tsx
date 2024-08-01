@@ -17,6 +17,16 @@ import { ContactCard } from "./contact-card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
 
 
@@ -31,19 +41,19 @@ export function NavBar() {
         
       <div className="ml-auto flex items-center gap-3">
 
-        <Dialog>
-          <DialogTrigger>
-          <MessageIcon/>
-          </DialogTrigger>
-          <DialogContent className="rounded-xl bg-transparent shadow-none border-0">
-              <DialogHeader>
-                  <DialogDescription>
-                        <ContactCard/>
-                  </DialogDescription>
-                </DialogHeader>
-          </DialogContent>
-        </Dialog>
-
+<Sheet>
+  <SheetTrigger>
+    Ask Lucy 
+    <span className="float-right ml-2">
+      <MessageIcon/>
+    </span>
+  </SheetTrigger>
+  <SheetContent className="min-w-[450px] md:min-w-[760px] h-screen">
+    <SheetHeader>
+      <iframe className="h-screen pb-12" src="https://utopia-chat.vercel.app/" width="100%" height="100%" allowFullScreen></iframe>
+    </SheetHeader>
+  </SheetContent>
+</Sheet>
 
 
 
