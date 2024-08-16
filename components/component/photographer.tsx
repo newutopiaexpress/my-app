@@ -15,7 +15,7 @@ import React from "react";
 
 export function Photographer() {
   return (
-    <div className="mb-16">
+    <div className="mb-16 border rounded-2xl p-9">
 
 
             <Link href="https://search.utopia.express" className="" target="_blank">
@@ -31,7 +31,7 @@ export function Photographer() {
 
             <div className="flex flex-col transition-all relative"> 
                 
-                <div className="relative mx-auto bg-stone-900 rounded-md mt-5">
+                <div className="relative mx-auto bg-stone-300 shadow-lg rounded-md mt-5">
 
                     <Link href="https://search.utopia.express" className="hover:text-stone-700" target="_blank">
                         <div className="absolute -right-9 bottom-14 text-stone-100 z-50">
@@ -41,11 +41,11 @@ export function Photographer() {
                     </Link>
 
                     <Image
-                        src="/v0.png"
+                        src="/ai.jpg"
                         alt="AI Photographer"
                         width={901}
                         height={1168}
-                        className="duration-400 transition-all cover -rotate-2 hover:rotate-1 shadow-xl shadow-indigo-950/50 rounded-md">
+                        className="duration-400 transition-all cover -rotate-1 hover:rotate-0 shadow-xl shadow-stone-800/50 rounded-md">
                     </Image>
 
                 </div>   
@@ -54,36 +54,40 @@ export function Photographer() {
 
             <div className="text-stone-500  p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all rounded-3xl relative"> 
 
-                    <h1 className="pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text text-left  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
+                    <h1 className="relative mt-9 md:mt-0 text-center md:text-left pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
+                      
+                      <div className="absolute -top-2 left-2 z-50">
+                        <span className="relative flex h-2 w-2">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+                        </span>
+                      </div>
+                      
                       <span className="relative text-center align-top pt-0 pb-1 pl-3 pr-5 mr-2 bg-gradient-to-b from-stone-700 to-stone-800 rounded-2xl text-stone-100 shadow-lg ring-4 ring-stone-700 shadow-stone-900/30">
-                        <span className="animate-pulse w-2 h-2 bg-rose-300 absolute top-2 right-2 rounded-full"></span>
                         Ai
                       </span> 
                         Photographer
                     </h1>
-                    <p className="text-2xl max-w-[390px] mt-9">Stunningly lifelike photos, as if taken by a professional photographer.</p>
+                    <p className="text-center md:text-left text-2xl max-w-[390px] mt-9">Stunningly lifelike photos, as if taken by a professional photographer.</p>
                     
                     <div className="gap-6 grid grid-cols-1 md:grid-cols-3 md:gap-9 w-full pt-6 text-stone-500 text-center">
                     
                       <div className="pt-4 text-left  transition-all relative mb-6">
                           <ScanIcon/>
-                          <p className="pt-2 text-sm leading-5">
+                          <p className="text-center md:text-left pt-2 text-sm leading-5">
                               <span className="font-normal">Upload some portraits and let the magic begin!</span>
                           </p>
                       </div>
                       <div className="pt-4 text-left transition-all relative mb-6">
                           <GenerateIcon/>
-                          <p className="pt-2 text-sm leading-5"> 
+                          <p className="text-center md:text-left pt-2 text-sm leading-5"> 
                               <span className="font-normal">Our AI model able to learn, and reconstruct your characteristic.</span>
                           </p>
                       </div>
                       
                       <div className="relative pt-4 text-left transition-all mb-6">
-                          <span className="absolute left-7 top-2 bg-rose-500 text-stone-100 pl-2 pr-2  font-extrabold rounded-full shadow-md">
-                            +24
-                          </span>
                           <TrainingIcon/>
-                          <p className="pt-2 text-sm leading-5">
+                          <p className="text-center md:text-left pt-2 text-sm leading-5">
                               <span className="font-normal">One serie contain 24 photos in 3 different style.</span>
                           </p>
                       </div>
@@ -101,7 +105,7 @@ export function Photographer() {
 
 function ScanIcon() {
   return (
-<svg className="w-12 h-12 stroke-stone-400 text-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
+<svg className="w-12 h-12 stroke-stone-400 mx-auto md:text-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
   <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
 </svg>
@@ -112,7 +116,7 @@ function ScanIcon() {
 
 function GenerateIcon() {
   return (
-<svg className="w-12 h-11 stroke-stone-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+<svg className="w-12 h-11 stroke-stone-400 mx-auto md:text-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" />
 </svg>
   )
@@ -120,7 +124,7 @@ function GenerateIcon() {
 
 function TrainingIcon() {
   return (
-<svg className="w-12 h-11 stroke-stone-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+<svg className="w-12 h-11 stroke-stone-400 mx-auto md:text-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
 </svg>
 

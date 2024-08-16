@@ -8,9 +8,9 @@ import { Video } from "@/components/component/video";
 export function Hero() {
   return (
     <div className="bg-transparent mx-auto w-full mt-10 mb-12">
-          <p className="pb-4 tracking-wide text-center text-md text-stone-400">
+          <h1 className="mt-9 md:mt-0 text-center md:text-left pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
             Futuristic tools that make your <span className="font-bold bg-gradient-to-br from-stone-800 to-stone-300 shadow-sm bg-clip-text text-center tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-lg  md:leading-[4rem] ">Journey into the Singularity</span> much smoother
-          </p>  
+          </h1>  
           <iframe className="mx-auto rounded-2xl shadow-2xl" width="560" height="315" src="https://www.youtube.com/embed/kamKssKuYok?si=fSYkglrNM5brNQDK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
     </div>
   )

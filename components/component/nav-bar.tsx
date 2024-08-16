@@ -42,10 +42,18 @@ export function NavBar() {
       <div className="ml-auto flex items-center gap-3">
 
 <Sheet>
-  <SheetTrigger>
-    Ask Lucy 
+  <SheetTrigger className="relative">
+    <span className="text-stone-800 absolute right-16 top-3 w-24 text-right">
+    Ask Lucy
+    </span> 
     <span className="float-right ml-2">
-      <MessageIcon/>
+      <span className="relative flex h-12 w-12">
+      <Image 
+                    src="/lucy.jpg" 
+                    width="333"
+                    height="333"
+                    alt="" className="absolute inset-0 h-full w-full object-cover rounded-full"></Image>
+      </span>
     </span>
   </SheetTrigger>
   <SheetContent className="min-w-[450px] md:min-w-[760px] h-screen">

@@ -19,26 +19,28 @@ import Link from "next/link";
 import { Hero } from "@/components/component/hero";
 import { Photographer } from "@/components/component/photographer";
 import { Voice } from "@/components/component/voice";
+import { Bento2 } from "@/components/component/bento2";
+
 
 export default function Home() {
   return (
 
 
-    <div className="overflow-x-hidden w-full md:w-5/6 lg:w-3/4 mx-auto py-6 px-2 md:px-6">
+    <div className="overflow-x-hidden w-full mx-auto py-12">
        
-          <div className="mx-auto lg:w-full">
-          <Hero/>
+          <div className="py-9 mx-auto md:w-3/4 lg:max-w-[1400px]">
+          <Bento2/>
           </div>
 
-          <div className="py-9 mx-auto lg:w-full">
+          <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1200px]">
           <Research4/> 
           </div>
 
-          <div className="py-9 mx-auto lg:w-full">
+          <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1200px]">
             <Photographer/>
           </div>
 
-          <div className="py-9 mx-auto lg:w-full">
+          <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1200px]">
             <Voice/>
           </div>
 
