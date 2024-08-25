@@ -10,14 +10,15 @@ import { Typewriter } from 'nextjs-simple-typewriter'
 export function Bento2() {
   return (
 	<div className="mx-auto">
-		<div className="min-h-[380px] md:min-h-[520px] relative flex flex-col overflow-hidden rounded-2xl px-4 pb-4 pt-40 flex-grow">
+		<div className="h-[600px] md:h-[717px] relative flex flex-col overflow-hidden rounded-2xl px-4 pb-4 pt-40 flex-grow">
             <Image 
-                    src="/landscape.jpg" 
-                    width="1536"
-                    height="640"
-                    alt="" className="absolute inset-0 h-full w-full object-cover"></Image>
+                    src="/intro.png" 
+                    width="1280"
+                    height="717"
+                    alt="hello" className="absolute inset-0 h-full w-full object-cover">
+            </Image>
             <div className="absolute inset-0 bg-gradient-to-b from-gray-900/0 to-gray-900/0"></div>
-			<h3 className="z-10 text-xl font-thin text-white absolute bottom-0 left-0 p-4 xs:text-xl md:text-xl">
+			<h3 className="z-10 text-xl font-thin text-white absolute bottom-0 right-0 p-4 xs:text-xl md:text-xl">
             <Typewriter
             words={['Let humans do, what they really want to do', 'Lets do things out of adventure, curiosity, joy and passion.', 'We are not the robots anymore.','We built one.']}
             loop={0}

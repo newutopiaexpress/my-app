@@ -8,9 +8,10 @@ import Image from "next/image";
 export function Bento() {
   return (
 	<div className="py-4 px-2 mx-auto sm:py-4 lg:px-6">
-		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
-			<div className="col-span-2 sm:col-span-1 md:col-span-2 h-auto md:h-full flex flex-col">
-				<a href="" className="group relative flex flex-col overflow-hidden rounded-2xl px-4 pb-4 pt-40 flex-grow">
+		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6 h-full">
+
+			<div className="col-span-2 sm:col-span-1 md:col-span-3 h-auto gap-6 md:h-full flex flex-col">
+				<div className="group relative flex flex-col overflow-hidden rounded-2xl px-4 pb-4 pt-40 flex-grow">
                     <Image 
                     src="/stars.gif" 
                     width="800"
@@ -18,9 +19,34 @@ export function Bento() {
                     alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"></Image>
                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/100"></div>
 					<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Wines</h3>
-				</a>
+				</div>
+        <div className="group relative flex flex-col overflow-hidden rounded-2xl px-4 pb-4 pt-40 flex-grow">
+            <div className="grid md:grid-cols-2">
+                <div className="relative bg-stone-800">
+                    <Image 
+                    src="/stars.gif" 
+                    width="800"
+                    height="400"
+                    alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"></Image>
+                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/100"></div>
+					          <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Wines</h3>
+                </div>
+
+                <div className="relative bg-blue-800">
+                    <Image 
+                    src="/stars.gif" 
+                    width="800"
+                    height="400"
+                    alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"></Image>
+                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/100"></div>
+					          <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Wines</h3>
+                </div>
+              
+            </div>
+				</div>
 			</div>
-			<div className="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
+
+			<div className="col-span-2 sm:col-span-1 md:col-span-2">
 				<a href="" className="group relative flex flex-col overflow-hidden rounded-2xl px-4 pb-4 pt-40 mb-4">
                     <Image 
                     src="/v1.jpg" 
@@ -53,6 +79,7 @@ export function Bento() {
 					</a>
 				</div>
 			</div>
+
 			<div className="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
 				<a href="" className="group relative flex flex-col overflow-hidden rounded-2xl px-4 pb-4 pt-40 flex-grow">
                     <Image src="/v1.jpg" 
@@ -63,6 +90,7 @@ export function Bento() {
 					<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Brandy</h3>
 				</a>
 			</div>
+
 		</div>
 	</div>
   )
