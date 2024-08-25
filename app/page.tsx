@@ -25,7 +25,6 @@ import { Bento2 } from "@/components/component/bento2";
 export default function Home() {
   return (
 
-
     <div className="overflow-x-hidden w-full mx-auto py-12">
        
           <div className="py-9 mx-auto md:w-3/4 lg:max-w-[1400px]">
@@ -38,10 +37,6 @@ export default function Home() {
 
           <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1200px]">
             <Photographer/>
-          </div>
-
-          <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1200px]">
-            <Voice/>
           </div>
 
           <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
