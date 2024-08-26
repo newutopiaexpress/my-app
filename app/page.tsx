@@ -17,7 +17,7 @@ import { PostersCarousel } from "@/components/component/posters-carousel";
 import { Launch } from "@/components/component/launch";
 import Link from "next/link";
 import { Hero } from "@/components/component/hero";
-import { Photographer } from "@/components/component/photographer";
+import { Photographer2 } from "@/components/component/photographer2";
 import { Voice } from "@/components/component/voice";
 import { Bento2 } from "@/components/component/bento2";
 
@@ -36,17 +36,10 @@ export default function Home() {
           </div>
 
           <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1200px]">
-            <Photographer/>
-          </div>
+            <Photographer2/>
+          </div>  
 
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-          <p className="text-xs uppercase tracking-wider text-stone-400">
-            Uplifting Music on youtube
-            <span className="float-right">2024.04.10</span>
-          </p>
-          <Separator className="w-full h-px bg-stone-300 mt-4 mb-4"/>
-
-          <div className="mx-auto lg:w-full">
+          <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1200px]">
           <Youtube/>
           </div>
 

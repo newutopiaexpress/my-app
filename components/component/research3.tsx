@@ -59,7 +59,9 @@ export function Research3() {
           <div className="rounded-2xl flex flex-col transition-all relative"> 
             
             <div className="relative mx-auto shadow-2xl shadow-indigo-900/40 h-96 w-64 mb-6 bg-gradient-to-r from-stone-100 to-stone-50 rounded-2xl p-6 ring-offset-0 ring-8 ring-stone-100/80">
+                
                 <div className="relative w-12 h-12">
+
                 <div className="absolute">
                     <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-stone-700 opacity-75"></span>
@@ -67,7 +69,7 @@ export function Research3() {
                     </span>
                 </div>
                 </div>
-                <p className="h-28 text-2xl font-extrabold italic text-stone-700">
+                <p className="h-28 text-2xl font-extrabold italic text-stone-700 z-100">
                     <Typewriter
                     options={{
                     loop: true,
@@ -84,8 +86,8 @@ export function Research3() {
                         .start();
                     }}
                     />
-                </p>
-            </div>   
+                </p> 
+            </div>  
 
           </div>       
 

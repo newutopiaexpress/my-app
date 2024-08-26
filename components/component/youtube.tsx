@@ -29,7 +29,19 @@ import {
 export function Youtube() {
   return (
 
-    <div className="pb-9 text-center rounded-3xl border border-stone-300">
+  
+    <div className="pb-9">
+
+        <div className="py-9">
+            <Link href="https://www.youtube.com/@theutopiaexpress" className="" target="_blank">
+                    <p className="text-[10px] uppercase tracking-wider text-stone-400 hover:text-stone-800">
+                        <span className="invisible md:visible">Utopia Express on Youtube</span>
+                        <span className="float-right">youtube.com/@theutopiaexpress<ArrowIcon/></span>
+                    </p>
+            </Link>
+            <Separator className="w-full h-px bg-stone-500/10 mt-4 mb-4"/>
+        </div>
+
       <h1 className="py-12 animate-fade bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">Recharge & Relax</h1>
       <p className="animate-fade-up animate-delay-300 tracking-wide md:w-5/6 mx-auto text-2xl text-stone-500 dark:text-gray-100 transparent text-center">Uplifting Music by Utopia Express</p>
 
@@ -119,7 +131,7 @@ export function Youtube() {
 
 function ArrowIcon() {
   return (
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="float-right w-6 h-6 ">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="float-right ml-2 w-4 h-4">
   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
 </svg>
   )

@@ -9,7 +9,9 @@ const badgeVariants = cva(
     variants: {
       variant: {
         orange:
-          "pt-1 pb-1 pl-4 pr-4 mr-0 rounded-full border-transparent bg-amber-500 hover:bg-amber-500/90 text-stone-100 shadow-md",
+          "pt-1 pb-1 pl-4 pr-4 mr-0 rounded-full border-transparent bg-orange-400 hover:bg-amber-500/90 text-stone-100 shadow-md",
+        orangeblack:
+          "pt-0 pb-1 pl-4 pr-4 mr-0 rounded-full border-transparent hover:bg-stone-800 bg-orange-500 text-orange-200 hover:text-stone-800 shadow-xl shadow-orange-900/30",
         rose:
           "pt-0 pb-1 pl-4 pr-4 mr-0 rounded-full border-transparent bg-rose-500 hover:bg-rose-500/90 text-stone-100 shadow-md",
         green:
