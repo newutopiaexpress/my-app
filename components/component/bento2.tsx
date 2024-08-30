@@ -12,14 +12,14 @@ export function Bento2() {
 	<div className="mx-auto">
 
 
-		<div className="h-[600px] md:h-[717px] relative flex flex-col overflow-hidden bg-cover bg-no-repeat rounded-2xl px-4 pb-4 pt-40 flex-grow">
+		<div className="min-h-[400px] lg:h-[700px] relative flex flex-col overflow-hidden bg-cover bg-no-repeat rounded-2xl px-4 pb-4 pt-40 flex-grow">
             
                   {/* Image for desktop screens */}
             <Image
               src="/intro2.png"
               width="1400"
               height="785"
-              className="hidden lg:block w-full h-auto absolute inset-0 transition duration-300 ease-in-out hover:scale-110"
+              className="cover hidden lg:block w-full h-auto absolute inset-0 transition duration-300 ease-in-out hover:scale-110"
               alt="A playful kitten on a desktop environment"
             />
             {/* Image for mobile screens */}
