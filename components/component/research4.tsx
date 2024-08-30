@@ -33,22 +33,22 @@ export function Research4() {
             <h1 className=" text-center md:text-left pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
              Research & Writer Assistant for Content Creators
             </h1>
-            <p className=" text-center md:text-left text-2xl text-stone-500 max-w-[480px]">Cooperation of three autonomous AI agents to make your work more fun & efficient.</p>
+            <p className="text-center md:text-left text-2xl text-stone-500 max-w-[480px]">Cooperation of three autonomous AI agents to make your work more fun & efficient.</p>
             
             <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full md:gap-9 pt-12 text-stone-600 text-center">
-              <div className="text-center transition-all relative mb-6 ">
+              <div className="text-center transition-all relative py-6 md:py-2">
                 <UploadIcon/>
                 <p className="pt-2 text-sm leading-5">
                     <span className="font-normal text-stone-500">Understands what you need & helps refine your search</span>
                 </p>
               </div>
-              <div className="text-center transition-all relative mb-6 ">
+              <div className="text-center transition-all relative py-6 md:py-2">
                 <TrainingIcon/>
                 <p className="pt-2 text-sm leading-5"> 
                     <span className="font-normal text-stone-500">Collects data in real time & process the result</span>
                 </p>
               </div>
-              <div className="text-center transition-all relative mb-6">
+              <div className="text-center transition-all relative py-6 md:py-2">
                 <GenerateIcon/>
                 <p className="pt-2 text-sm leading-5">
                     <span className="font-normal text-stone-500">Chat with an excerpt AI about the results</span>
@@ -58,7 +58,7 @@ export function Research4() {
 
           </div>
 
-          <div className="flex flex-col place-content-center transition-all relative"> 
+          <div className="mt-16 md:mt-0 flex flex-col place-content-center transition-all relative"> 
             
             <div className="relative mx-auto shadow-2xl shadow-orange-900/40 h-96 w-64 mb-6 bg-gradient-to-r from-stone-100 to-stone-50 rounded-2xl p-6 ring-offset-0 ring-8 ring-stone-100/80">
                 <div className="relative w-12 h-12">
@@ -130,8 +130,8 @@ function GenerateIcon() {
 function TrainingIcon() {
   return (
 <svg className=" animate-spin p-1 h-10 w-10 text-white mx-auto md:text-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-<circle className="stroke-stone-400/100" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1"></circle>
-<path className=" fill-stone-400" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+<circle className="stroke-stone-400/30" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1"></circle>
+<path className=" fill-orange-400" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
 </svg>
   )
 }

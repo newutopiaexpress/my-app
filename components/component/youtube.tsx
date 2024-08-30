@@ -15,23 +15,13 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import { Separator } from "@/components/ui/separator";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 
 
 
 export function Youtube() {
   return (
 
-  
     <div className="pb-9">
-
         <div className="py-9">
             <Link href="https://www.youtube.com/@theutopiaexpress" className="" target="_blank">
                     <p className="text-[10px] uppercase tracking-wider text-stone-400 hover:text-stone-800">

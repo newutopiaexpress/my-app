@@ -26,7 +26,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
+import { Suspense } from 'react'
 
 
 
@@ -56,11 +57,13 @@ export function NavBar() {
       </span>
     </span>
   </SheetTrigger>
-  <SheetContent className="min-w-[450px] md:min-w-[760px] h-screen">
+  <Suspense fallback={<p>Call Lucy...</p>}>
+  <SheetContent className="w-full md:min-w-[760px] h-screen">
     <SheetHeader>
       <iframe className="h-screen pb-12" src="https://utopia-chat.vercel.app/" width="100%" height="100%" allowFullScreen></iframe>
     </SheetHeader>
   </SheetContent>
+  </Suspense>
 </Sheet>
 
 

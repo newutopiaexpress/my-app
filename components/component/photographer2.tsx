@@ -31,14 +31,14 @@ export function Photographer2() {
 
             <div className="col-span-1 transition-all relative"> 
                 
-                <div className="relative mx-auto bg-transparent h-[512px]">
+                <div className="relative mx-auto bg-transparent">
 
                     <Image
                         src="/robot.png"
                         alt="AI Photographer"
                         width={570}
                         height={582}
-                        className="duration-400 transition-all cover md:float-right">
+                        className="mx-auto duration-400 transition-all cover md:float-right scale-75 md:scale-100">
                     </Image>
 
                 </div>   
@@ -56,20 +56,20 @@ export function Photographer2() {
                     
                     <div className="gap-6 grid grid-cols-1 md:grid-cols-3 md:gap-9 w-full md:max-w-[600px] pt-6 text-stone-500 text-center">
                     
-                      <div className="pt-4 text-left  transition-all relative mb-4">
+                      <div className="py-6 text-left  transition-all relative mb-4">
                           <ScanIcon/>
                           <p className="text-center md:text-left pt-2 text-sm leading-5">
                               <span className="font-normal">Upload some portraits and let the magic begin!</span>
                           </p>
                       </div>
-                      <div className="pt-4 text-left transition-all relative mb-4">
+                      <div className="py-6 text-left transition-all relative mb-4">
                           <GenerateIcon/>
                           <p className="text-center md:text-left pt-2 text-sm leading-5"> 
                               <span className="font-normal">Our AI model able to learn, and reconstruct your characteristic.</span>
                           </p>
                       </div>
                       
-                      <div className="relative pt-4 text-left transition-all mb-4">
+                      <div className="relative py-6 text-left transition-all mb-4">
                           <TrainingIcon/>
                           <p className="text-center md:text-left pt-2 text-sm leading-5">
                               <span className="font-normal">One serie contain 24 photos in 3 different style.</span>

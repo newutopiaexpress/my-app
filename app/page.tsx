@@ -25,9 +25,9 @@ import { Bento2 } from "@/components/component/bento2";
 export default function Home() {
   return (
 
-    <div className="overflow-x-hidden w-full mx-auto py-12">
+    <div className="overflow-x-hidden w-full mx-auto py-12 px-2 md:px-0">
        
-          <div className="py-9 mx-auto md:w-3/4 lg:max-w-[1400px]">
+          <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1400px]">
           <Bento2/>
           </div>
 
@@ -43,8 +43,7 @@ export default function Home() {
           <Youtube/>
           </div>
 
-
-      </div>
+    </div>
 
           
     

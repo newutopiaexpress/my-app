@@ -10,15 +10,29 @@ import { Typewriter } from 'nextjs-simple-typewriter'
 export function Bento2() {
   return (
 	<div className="mx-auto">
-		<div className="h-[600px] md:h-[717px] relative flex flex-col overflow-hidden rounded-2xl px-4 pb-4 pt-40 flex-grow">
-            <Image 
-                    src="/intro.png" 
-                    width="1280"
-                    height="717"
-                    alt="hello" className="absolute inset-0 h-full w-full object-cover">
-            </Image>
+
+
+		<div className="h-[600px] md:h-[717px] relative flex flex-col overflow-hidden bg-cover bg-no-repeat rounded-2xl px-4 pb-4 pt-40 flex-grow">
+            
+                  {/* Image for desktop screens */}
+            <Image
+              src="/intro2.png"
+              width="1400"
+              height="785"
+              className="hidden lg:block w-full h-auto absolute inset-0 transition duration-300 ease-in-out hover:scale-110"
+              alt="A playful kitten on a desktop environment"
+            />
+            {/* Image for mobile screens */}
+            <Image
+              src="/intro-p.png"
+              width="816"
+              height="765"
+              className="block lg:hidden w-full h-auto absolute inset-0 "
+              alt="A playful kitten seen on a mobile screen"
+            />
+
             <div className="absolute inset-0 bg-gradient-to-b from-gray-900/0 to-gray-900/0"></div>
-			<h3 className="z-10 text-xl font-thin text-white absolute bottom-0 right-0 p-4 xs:text-xl md:text-xl">
+			      <h3 className="z-10 text-xl font-thin text-white bg-stone-900 absolute bottom-0 right-0 p-4 xs:text-xl md:text-xl">
             <Typewriter
             words={['Let humans do, what they really want to do', 'Lets do things out of adventure, curiosity, joy and passion.', 'We are not the robots anymore.','We built one.']}
             loop={0}
