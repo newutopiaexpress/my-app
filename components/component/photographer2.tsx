@@ -18,9 +18,10 @@ export function Photographer2() {
     <div className="mb-10">
 
         <div className="py-9">
+            <Separator className="w-full h-px bg-stone-500/10 mt-4 mb-4"/>
             <Link href="https://clone.utopia.express" className="" target="_blank">
                     <p className="text-[10px] uppercase tracking-wider text-stone-400 hover:text-stone-800">
-                        <span className="invisible md:visible">AI Photographer</span>
+                        <span className="invisible md:visible">Astria AI</span>
                         <span className="float-right">clone.utopia.express <ArrowIcon/></span>
                     </p>
             </Link>
