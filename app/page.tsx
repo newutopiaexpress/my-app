@@ -20,7 +20,7 @@ import { Hero } from "@/components/component/hero";
 import { Photographer2 } from "@/components/component/photographer2";
 import { Voice } from "@/components/component/voice";
 import { Bento2 } from "@/components/component/bento2";
-
+import { Typeform } from "@/components/component/typeform";
 
 
 export default function Home() {
@@ -44,7 +44,9 @@ export default function Home() {
           <Youtube/>
           </div>
 
-
+          <div className="mx-auto md:w-5/6 lg:max-w-[1200px] rounded-3xl">
+          <Typeform/>
+          </div>
 
     </div>
 

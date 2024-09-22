@@ -78,10 +78,30 @@ export function Photographer2() {
                       </div>
                     </div>
 
-                    <Link href="https://search.utopia.express" className="hover:text-stone-700" target="_blank">
-                        <div className=" text-stone-800 mt-16">
-                            <h2 className="text-4xl font-extrabold float-left"><span className="align-middle text-sm opacity-35">from: </span>9<span className="align-middle text-sm opacity-35"> €/series</span></h2>
-                            <Badge variant="orangeblack" className="align-middle text-lg mt-2 ml-4">Get Your Portraits!</Badge>   
+                    <Link href="https://search.utopia.express"  target="_blank">
+                        <div className=" text-stone-800 mt-8 p-3 w-96 text-right relative">
+                            <Image 
+                            src={"/v1.png"} 
+                            alt="AI Photographer" 
+                            width={150} 
+                            height={180} 
+                            className="w-12 h-12 rounded-full absolute left-0 top-1 shadow-orange-900/30"/>
+                            <Image 
+                            src={"/v2.png"} 
+                            alt="AI Photographer" 
+                            width={150} 
+                            height={180} 
+                            className="w-12 h-12 rounded-full absolute left-10 top-1 shadow-orange-900/30"/>
+                            <Image 
+                            src={"/v3.png"} 
+                            alt="AI Photographer" 
+                            width={150} 
+                            height={180} 
+                            className="w-12 h-12 rounded-full absolute left-20 top-1 shadow-orange-900/30 opacity-70"/>
+
+                            <div className="bg-stone-100 w-12 h-12 rounded-full absolute left-28 top-1 shadow-orange-900/30 opacity-50"></div>
+
+                            <Badge variant="orangeblack" className="align-middle text-lg ml-4 text-left pt-1 pb-1 pl-4 pr-4">Get Your Portraits!</Badge>   
                         </div>
                     </Link>
             </div>        

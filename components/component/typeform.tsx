@@ -1,33 +1,41 @@
-import PropTypes from 'prop-types'
-import { Widget } from '@typeform/embed-react'
-import { Popover } from '@typeform/embed-react'
+import { Popover, PopupButton } from '@typeform/embed-react'
+import { useSearchParams } from 'next/navigation'
+
+
 
 const handleOnReady = () => {
-    // eslint-disable-next-line no-console
-    console.log('form ready')
-  }
+  // eslint-disable-next-line no-console
+  console.log('form in popover ready')
+}
 
-export function Typeform({ id = '01J6JM9F4433ZNF4Q4W07AX515' }) {
-  const widgetContainerStyle = {
-    width: '100%',
-    height: 400,
-    margin: '0px auto',
+export function Typeform() {
+
+
+  const buttonStyle = {
+    padding: '10px 20px',
+    borderRadius: 10,
+    border: 'none',
+    background: 'navy',
+    color: 'white',
+    fontSize: 16,
+    cursor: 'pointer',
   }
 
   return (
-    <div>
-        <Popover
-        id={id}
-        onReady={handleOnReady}
-        medium="demo-test"
-        hidden={{ foo: 'foo value', bar: 'bar value' }}
-        buttonProps={{ ariaLabel: 'Typeform Button', dataTestid: 'demo-button' }}
-        tooltip="welcome"
-      />
-    </div>
-  )
-}
+    <main>
+      <p>
+        <PopupButton
+          id="DqroYPcW"
+          style={buttonStyle}
+          size={66}
+          medium="demo-test"
+          hidden={{ foo: 'foo value', bar: 'bar value' }}
+        >
+          <span style={{ marginLeft: 10 }}>open popup</span>
+        </PopupButton>
+      </p>
 
-Typeform.propTypes = {
-  id: PropTypes.string,
+
+    </main>
+  )
 }
