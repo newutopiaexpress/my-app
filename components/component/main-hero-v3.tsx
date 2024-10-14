@@ -9,32 +9,29 @@ import logo from "@/public/logo.png";
 import { Badge } from "@/components/ui/badge";
 import { badgeVariants } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
+import { Video } from "@/components/component/video";
 
 
 export function MainHeroV3() {
   return (
-      <div className="mt-12 pt-8 mb-2 text-center text-gray-800 dark:text-gray-100">
-
-          <h1 className="animate-fade pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-center  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
+      <div className="mt-12 pt-8 mb-2 text-center text-gray-800 dark:text-gray-100 grid md:grid-cols-12 md:gap-16 animate-fade-up animate-delay-300">
+        
+        <div className="col-span-6 md:text-right">
+          <h1 className="md:mt-16 animate-fade pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-cente md:text-right  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
           Let humans do,
           <br />
           what they really want to do
           </h1>
-        <p className="animate-fade-up animate-delay-300 tracking-wide	mt-3 mb-6 text-2xl text-stone-500 dark:text-gray-100 transparent">
-          Lets do things out of adventure, curiosity, joy and passion.
-          <br />
-          We are not the robots anymore.
-        </p>
-        
-        <Link href="#launch">
-                <Button variant="outline" className="h-14">
-                      <span className="font-extrabold mr-2 ml-4">Launch</span> Your Automated AI Service
-                      <Button variant="default" size="icon" className="ml-4">
-                      <RocketIcon/> 
-                    </Button>
-                </Button>
-        </Link>
+          <p className="col-span-6 tracking-wide	mt-3 mb-6 text-2xl text-stone-500 dark:text-gray-100 transparent">
+            Lets do things out of adventure, curiosity, joy and passion.
+            <br />
+            We are not the robots anymore.
+          </p>
+        </div>
+
+        <div className="mx-auto w-96 h-auto animate-fade-up animate-delay-300">
+          <Video/>
+        </div>
 
       </div>
   )

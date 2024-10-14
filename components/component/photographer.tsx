@@ -15,7 +15,7 @@ import React from "react";
 
 export function Photographer() {
   return (
-    <div className="mb-16 border rounded-2xl p-9">
+    <div className="mb-16 borde rounded-2xl p-9">
 
 
             <Link href="https://search.utopia.express" className="" target="_blank">

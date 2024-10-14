@@ -17,36 +17,61 @@ import { PostersCarousel } from "@/components/component/posters-carousel";
 import { Launch } from "@/components/component/launch";
 import Link from "next/link";
 import { Hero } from "@/components/component/hero";
-import { Photographer2 } from "@/components/component/photographer2";
+import { Photographer } from "@/components/component/photographer";
 import { Voice } from "@/components/component/voice";
 import { Bento2 } from "@/components/component/bento2";
 import { Typeform } from "@/components/component/typeform";
-
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
 
     <div className="overflow-x-hidden w-full mx-auto py-12 px-2 md:px-0">
        
-          <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1400px]">
-          <Bento2/>
-          </div>
+       {/*}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.6 }} 
+            className="py-9 mx-auto md:w-5/6 lg:max-w-[1400px]">
+          <Voice/>
+          </motion.div>
+          
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.6 }} 
+            className="py-9 mx-auto md:w-5/6 lg:max-w-[1400px]">
+          <Purposes/>
+          </motion.div>*/}
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.6 }} 
+            className="py-9 mx-auto md:w-5/6 lg:max-w-[1400px]">
+          <MainHeroV3/>
+          </motion.div>
 
           <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1200px]">
           <Research4/> 
           </div>
 
+          
+
           <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1200px]">
-            <Photographer2/>
+            <Photographer/>
           </div>  
 
           <div className="py-9 mx-auto md:w-5/6 lg:max-w-[1200px]">
           <Youtube/>
           </div>
 
+{/*}
           <div className="mx-auto md:w-5/6 lg:max-w-[1200px] rounded-3xl">
           <Typeform/>
           </div>
+          */}
 
     </div>
 

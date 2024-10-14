@@ -1,9 +1,9 @@
 export function Video() {
     return (
-      <video width="320" height="240" controls preload="none">
-        <source src="/final2.mp4" type="video/mp4" />
+      <video width="720" height="1200" controls preload="true" className="rounded-3xl shadow-lg">
+        <source src="/video.mp4" type="video/mp4" />
         <track
-          src="/final2.mp4"
+          src="/video.mp4"
           kind="subtitles"
           srcLang="en"
           label="English"
