@@ -27,40 +27,75 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Suspense } from 'react'
-
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
+import { Suspense } from 'react';
+import ContactForm from '@/components/component/ContactForm';
+import { PaperPlaneIcon } from "@radix-ui/react-icons"
 
 
 export function NavBar() {
   return (
-    <nav className=" fixed flex md:flex-row items-center h-14 w-full  shrink-0 px-4 md:px-6">
+    <nav className=" fixed flex md:flex-row items-center h-14 w-full  shrink-0 px-4 md:px-6 z-50">
       <div className="relative">
-        <Link className="mr-auto" href="https://utopia.express">
-          <UtopiaIcon/>
-        </Link>
+        <UtopiaIcon/>
+        
+        {/*}
+        <NavigationMenu>
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="bg-transparent">
+                <UtopiaIcon/>
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="bg-transparent min-w-max shadow-xl">
+                <div className="grid grid-cols-2 bg-transparent">
+                  <div className="col-span-1 bg-stone-900 hover:bg-stone-700 text-stone-100 p-4 w-48">
+                    <Link href="https://clone.utopia.express" legacyBehavior passHref>
+                      <NavigationMenuLink className="">
+                        clone.utopia.express
+                      </NavigationMenuLink>
+                    </Link>
+                    <Image  src="/nikon2.png" width="737" height="1152" alt="" className="w-48 h-auto"></Image>
+                    <p>Create a digital clone and take any photos in any style!</p>
+                  </div>
+                  <div className="col-span-1 bg-stone-100 p-4 w-48">
+                    <Link href="https://clone.utopia.express" legacyBehavior passHref>
+                      <NavigationMenuLink className="">
+                        clone.utopia.express
+                      </NavigationMenuLink>
+                    </Link>
+                    <p>Create a digital clone and take any photos in any style!</p>
+                  </div>
+                </div>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+        */}
       </div>
         
       <div className="ml-auto flex items-center gap-3">
 
+
 <Sheet>
-  <SheetTrigger className="relative">
-    <span className="text-stone-800 absolute right-16 top-3 w-24 text-right">
-    Ask Lucy
-    </span> 
-    <span className="float-right ml-2">
-      <span className="relative flex h-12 w-12">
-      <Image 
-                    src="/lucy.jpg" 
-                    width="333"
-                    height="333"
-                    alt="" className="absolute inset-0 h-full w-full object-cover rounded-full"></Image>
-      </span>
-    </span>
+  <SheetTrigger>
+    <Button variant="outline" className="relative mt-4 backdrop-blur-sm">
+                  <span className="mr-8">Send a message</span>
+                  <span className="absolute right-0 w-8 h-8 mr-1 shadow-sm bg-stone-100 text-stone-700 rounded-full flex items-center justify-center "><PaperPlaneIcon/></span>
+      </Button>
   </SheetTrigger>
   <Suspense fallback={<p>Call Lucy...</p>}>
   <SheetContent className="w-full md:min-w-[760px] h-screen">
     <SheetHeader>
-      <iframe className="h-screen pb-12" src="https://utopia-chat.vercel.app/" width="100%" height="100%" allowFullScreen></iframe>
+      <ContactForm />
     </SheetHeader>
   </SheetContent>
   </Suspense>
@@ -92,5 +127,64 @@ function PowerIcon() {
 function MessageIcon() {
   return (
   <svg  width="24" height="24" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path className=" fill-stone-600" d="M7.49985 0.877045C3.84216 0.877045 0.877014 3.84219 0.877014 7.49988C0.877014 11.1575 3.84216 14.1227 7.49985 14.1227C11.1575 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1575 0.877045 7.49985 0.877045ZM1.82701 7.49988C1.82701 4.36686 4.36683 1.82704 7.49985 1.82704C10.6328 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6328 13.1727 7.49985 13.1727C4.36683 13.1727 1.82701 10.6329 1.82701 7.49988ZM7.49999 9.49999C8.60456 9.49999 9.49999 8.60456 9.49999 7.49999C9.49999 6.39542 8.60456 5.49999 7.49999 5.49999C6.39542 5.49999 5.49999 6.39542 5.49999 7.49999C5.49999 8.60456 6.39542 9.49999 7.49999 9.49999Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+  )
+}
+
+function FacebookIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      stroke="none"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  )
+}
+
+
+function TwitterIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      stroke="none"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+    </svg>
+  )
+}
+
+
+function LinkedinIcon() {
+  return (
+    <svg
+
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      stroke="none"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
   )
 }

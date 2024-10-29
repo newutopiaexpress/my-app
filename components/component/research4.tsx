@@ -29,35 +29,6 @@ export function Research4() {
       
         <div className="animate-fade-up animate-delay-300 transition-all w-full grid md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
 
-          <div className="p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all rounded-3xl relative"> 
-            <h1 className=" text-center md:text-left pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
-             Research & Writer Assistant for Content Creators
-            </h1>
-            <p className="text-center md:text-left text-2xl text-stone-500 max-w-[480px]">Cooperation of three autonomous AI agents to make your work more fun & efficient.</p>
-            
-            <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full md:gap-9 pt-12 text-stone-600 text-center">
-              <div className="text-center transition-all relative py-6 md:py-2">
-                <UploadIcon/>
-                <p className="pt-2 text-sm leading-5">
-                    <span className="font-normal text-stone-500">Understands what you need & helps refine your search</span>
-                </p>
-              </div>
-              <div className="text-center transition-all relative py-6 md:py-2">
-                <TrainingIcon/>
-                <p className="pt-2 text-sm leading-5"> 
-                    <span className="font-normal text-stone-500">Collects data in real time & process the result</span>
-                </p>
-              </div>
-              <div className="text-center transition-all relative py-6 md:py-2">
-                <GenerateIcon/>
-                <p className="pt-2 text-sm leading-5">
-                    <span className="font-normal text-stone-500">Chat with an excerpt AI about the results</span>
-                </p>
-              </div>
-            </div>
-
-          </div>
-
           <div className="mt-16 md:mt-0 flex flex-col place-content-center transition-all relative"> 
             
             <div className="relative mx-auto shadow-2xl shadow-orange-900/40 h-96 w-64 mb-6 bg-gradient-to-r from-stone-100 to-stone-50 rounded-2xl p-6 ring-offset-0 ring-8 ring-stone-100/80">
@@ -96,7 +67,36 @@ export function Research4() {
 
             </div>   
 
-          </div>       
+          </div> 
+
+          <div className="p-4 lg:p-9 lg:col-span-2 sm:mb-8 flex flex-col transition-all rounded-3xl relative"> 
+            <h1 className=" text-center md:text-left pb-4 animate-fade bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
+             Research & Writer Assistant for Content Creators
+            </h1>
+            <p className="text-center md:text-left text-2xl text-stone-500 max-w-[480px]">Cooperation of three autonomous AI agents to make your work more fun & efficient.</p>
+            
+            <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full md:gap-9 pt-12 text-stone-600 text-center">
+              <div className="text-center transition-all relative py-6 md:py-2">
+                <UploadIcon/>
+                <p className="pt-2 text-sm leading-5">
+                    <span className="font-normal text-stone-500">Understands what you need & helps refine your search</span>
+                </p>
+              </div>
+              <div className="text-center transition-all relative py-6 md:py-2">
+                <TrainingIcon/>
+                <p className="pt-2 text-sm leading-5"> 
+                    <span className="font-normal text-stone-500">Collects data in real time & process the result</span>
+                </p>
+              </div>
+              <div className="text-center transition-all relative py-6 md:py-2">
+                <GenerateIcon/>
+                <p className="pt-2 text-sm leading-5">
+                    <span className="font-normal text-stone-500">Chat with an excerpt AI about the results</span>
+                </p>
+              </div>
+            </div>
+
+          </div>        
 
         </div>
 

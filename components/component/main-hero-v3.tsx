@@ -10,22 +10,49 @@ import { Badge } from "@/components/ui/badge";
 import { badgeVariants } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Video } from "@/components/component/video";
+import { LetterFx } from "./LetterFx";
 
 
 export function MainHeroV3() {
   return (
-      <div className="mt-12 pt-8 mb-2 text-center text-gray-800 dark:text-gray-100 grid md:grid-cols-12 md:gap-16 animate-fade-up animate-delay-300">
+      <div className="mt-6 pt-8 mb-2 text-gray-800 dark:text-gray-100 grid md:grid-cols-12 md:gap-16">
         
-        <div className="col-span-6 md:text-right">
-          <h1 className="md:mt-16 animate-fade pb-4 bg-gradient-to-br from-stone-900 to-stone-500 bg-clip-text text-cente md:text-right  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
+        <div className="col-span-6 text-left md:text-right md:mt-16 lg:mt-24">
+          <h1 className="md:pr-1 animate-fade pb-4 bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-cente md:text-right  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
           Let humans do,
           <br />
           what they really want to do
           </h1>
-          <p className="col-span-6 tracking-wide	mt-3 mb-6 text-2xl text-stone-500 dark:text-gray-100 transparent">
-            Lets do things out of adventure, curiosity, joy and passion.
-            <br />
-            We are not the robots anymore.
+          <p className="col-span-6 mt-3 mb-6 text-xl mx-auto font-thin text-stone-500 dark:text-gray-100 transparent md:max-w-[56%] md:float-right">
+            <span
+              style={{
+                fontFamily: 'var(--font-family-code)'
+              }}
+            >
+              <LetterFx
+                speed="medium"
+                trigger="instant"
+                charset={[
+                  'X',
+                  '@',
+                  '$',
+                  'a',
+                  'H',
+                  'z',
+                  'o',
+                  '0',
+                  'y',
+                  '#',
+                  '?',
+                  '*',
+                  '0',
+                  '1',
+                  '+'
+                ]}
+              >
+                Let's do things out of adventure, curiosity, joy and passion. It's time to level up.
+              </LetterFx>
+            </span>
           </p>
         </div>
 
