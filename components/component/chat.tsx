@@ -1,4 +1,3 @@
-'use client';
 import { Separator } from '@radix-ui/react-separator';
 import { useChat } from 'ai/react';
 
@@ -11,7 +10,11 @@ export default function Chat() {
     "AI integration & automation",
   ];
 
-  const icons = [<WebIcon />, <SuperIcon />, <AiIcon />];
+  const icons = [
+    <WebIcon key="web-icon" />,
+    <SuperIcon key="super-icon" />,
+    <AiIcon key="ai-icon" />
+  ];
 
   return (
     <div className="flex flex-col text-center w-full mx-auto stretch bg-cover bg-bottom pb-20" style={{ backgroundImage: "url('/bg.png')" }}>

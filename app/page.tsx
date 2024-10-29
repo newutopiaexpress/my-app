@@ -25,7 +25,6 @@ import { motion } from "framer-motion";
 import { Revolution } from "@/components/component/revolution";
 import { CarouselSection } from "@/components/component/carousel-section";
 import Chat from "@/components/component/chat";
-import ChatDark from "@/components/component/chat-dark";
 import Image from "next/image";
 import Typewriter from 'typewriter-effect';
 import { Badge } from "@/components/ui/badge";
