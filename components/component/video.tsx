@@ -34,7 +34,7 @@ export function Video() {
         height="1200"
         preload="true"
         poster="/cover2.png"
-        className="rounded-3xl"
+        className="rounded-3xl object-cover"
       >
         <source src="/video.mp4" type="video/mp4" />
         <track

@@ -18,6 +18,7 @@ type LetterFxProps = {
     onTrigger?: (triggerFn: () => void) => void;
     className?: string;
     style?: React.CSSProperties;
+    loopInterval?: number; // New prop for loop interval in milliseconds
 };
 
 const LetterFx = forwardRef<HTMLSpanElement, LetterFxProps>(({
@@ -28,6 +29,7 @@ const LetterFx = forwardRef<HTMLSpanElement, LetterFxProps>(({
     onTrigger,
     className,
     style,
+    loopInterval, // Destructure the new prop
 }, ref) => {
     const [text, setText] = useState<string>(typeof children === 'string' ? children : '');
     const [inProgress, setInProgress] = useState<boolean>(false);
@@ -93,6 +95,16 @@ const LetterFx = forwardRef<HTMLSpanElement, LetterFxProps>(({
             onTrigger(createEventHandler());
         }
     }, [trigger, onTrigger, createEventHandler]);
+
+    useEffect(() => {
+        if (loopInterval) {
+            const intervalId = setInterval(() => {
+                createEventHandler()();
+            }, loopInterval);
+
+            return () => clearInterval(intervalId);
+        }
+    }, [loopInterval, createEventHandler]);
 
     return (
         <span

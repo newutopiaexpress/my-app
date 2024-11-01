@@ -69,7 +69,7 @@ export default function Home() {
           <MainHeroV3/>
           </div>
 
-          <div className="rounded-3xl mx-6 mt-20 bg-cover bg-no-repeat bg-bottom bg-stone-900 min-h-[600px] " style={{ backgroundImage: "url('/designed.png')" }}>
+          <div className="rounded-3xl mx-1 md:mx-6 mt-20 bg-cover bg-no-repeat bg-bottom bg-stone-900 min-h-[600px] " style={{ backgroundImage: "url('/designed.png')" }}>
             <h1 className="pt-64 pb-9 text-center bg-gradient-to-br from-stone-100 to-white bg-clip-text  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-8xl md:leading-[4rem]">Designed for the Future</h1>
             <p className="text-center text-stone-100 text-xl bg-neutral-900/60 max-w-max mx-auto font-thin p-2">We don't know what Utopia will be like. But we believe in it, and we build it.</p>
             <p className="saturate-100 text-center text-stone-100 text-sm bg-neutral-900/0 max-w-max mx-auto font-thin p-2 flex items-center justify-center">
@@ -78,12 +78,12 @@ export default function Home() {
           </div>
 
           <div className="mx-6 md:mx-12 bg-cover bg-no-repeat bg-bottom grid md:grid-cols-2 relative">
-            <div className="md:min-h-[500px] p-8 col-span-1 text-left md:text-right flex items-center justify-end border-r border-stone-300">
-                <h1 className="pb-12 pr-1 bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-8xl md:leading-[5rem]">
+            <div className="md:min-h-[500px] p-8 col-span-2 md:col-span-1 text-center mx-auto md:text-right flex items-center justify-end md:border-r md:border-stone-300">
+                <h1 className="pb-1 md:pb-12 pr-1 bg-gradient-to-br from-stone-700 to-stone-800 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-8xl md:leading-[5rem]">
                 Built for<br/>the present
                 </h1>
             </div>
-            <div className="p-8 col-span-1 text-left flex md:w-[50%] items-center">
+            <div className="p-8 col-span-2 md:col-span-1 text-left flex md:w-[50%] items-center">
                 <p className="text-stone-800 text-xl mx-auto font-thin">We convert futuristic ideas into practical digital tools.  Everything is possible. Ask our AI expert Lucy what's coming in your industry and how you can get superpowers</p>
             </div>
             <div className="mx-auto text-center col-span-2 flex items-center justify-center">
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
 
 
-          <div className="ml-12 mr-12 grid md:grid-cols-12 gap-12 min-h-[476px] border-b border-stone-300 pb-6 mb-6">
+          <div className="md:ml-12 md:mr-12 grid md:grid-cols-12 gap-12 min-h-[476px] border-b border-stone-300 pb-6 mb-6">
             <div className="col-span-12 md:col-span-6">
                 <Aiphoto/>
             </div>
@@ -105,9 +105,9 @@ export default function Home() {
             </div> 
           </div>
 
-          <div className="max-w-[400px] md:max-w-[500px] mx-auto h-[170px] mt-36 mb-36 flex-row items-center">
+          <div className="max-w-[400px] md:max-w-[600px] mx-auto h-[170px] mt-36 mb-36 flex-row items-center">
             <Image src="/tamas2.png" width={170} height={170} alt="Designed for the Future" className="float-left mr-12 rounded-full outline outline-8 outline-stone-300 outline-offset-4"/>
-            <p>Hi, I'm Tamas, the creator and developer behind Utopia Express. And other futuristic things. If you like my work, let's cooperate!</p>
+            <p>Hi, I'm Tamas, the creator of Utopia Express. </p>
             <Sheet>
               <SheetTrigger>
                 <Button variant="outline" className="relative mt-4 backdrop-blur-sm">

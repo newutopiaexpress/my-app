@@ -6,19 +6,19 @@ import { Badge } from '../ui/badge';
 const Aiphoto: React.FC = () => {
   return (
     <div className="grid md:grid-cols-12 gap-0 bg-black min-h-[476px] rounded-3xl">
-      <div className="col-span-12 md:col-span-7 pl-6 pt-6 relative">
+      <div className="col-span-12 md:col-span-7 pl-4 pr-4 md:pl-6 pt-6 relative">
         <p className="absolute top-2 left-2 text-sm text-stone-100/40 flex items-center">
           <Image className="w-10 h-10 float-left mr-2" src="/fb-w.png" alt="Nikon" width={1024} height={1024} />
           Flux AI based fine tuning
         </p>
-        <h1 className="mt-16 pb-8 text-right bg-gradient-to-br from-stone-100 to-stone-200 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
+        <h1 className="mt-16 md:pb-8 text-left md:text-right bg-gradient-to-br from-stone-100 to-stone-200 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-4xl md:text-7xl md:leading-[4rem]">
           The Ai Photographer
         </h1>
-        <p className="text-stone-300 text-xl font-thin leading-7 tracking-normal text-right md:ml-32 mb-12">
+        <p className="text-stone-300 text-xl font-thin leading-7 tracking-normal text-left md:text-right md:ml-32 mb-12">
           Stunningly lifelike photos, as if taken by a professional photographer. Take photos in the modern way!
         </p>
         <Link href="https://clone.utopia.express" target="_blank">
-          <div className="text-stone-800 w-96 mb-12 float-right text-right relative">
+          <div className="text-stone-800 w-full md:w-96 mb-12 md:float-right md:text-right relative">
             <Image
               src="/v1.png"
               alt="AI Photographer"
@@ -40,17 +40,16 @@ const Aiphoto: React.FC = () => {
               height={180}
               className="w-12 h-12 rounded-full absolute left-20 top-1 shadow-orange-900/30 opacity-70"
             />
-            <Badge variant="outline" className="mt-1 align-middle text-lg ml-4 text-left py-2 px-4">
+            <Badge variant="outline" className="ml-36 mt-1 align-middle text-lg md:ml-4 text-left py-2 px-4">
             clone.utopia.express <SparIcon/>
             </Badge>
           </div>
         </Link>
       </div>
-      <div
-        className="col-span-12 md:col-span-5 pb-0 relative bg-cover bg-left-top bg-no-repeat bg-black rounded-3xl"
+      <div className="min-h-96 col-span-12 md:col-span-5 pb-0 relative bg-cover bg-left-top bg-no-repeat bg-black rounded-3xl"
         style={{ backgroundImage: "url('/pp.png')" }}
       >
-        <p className="absolute top-4 right-6 text-sm text-stone-500 flex items-center">
+        <p className="absolute top-4 right-20 md:right-6 text-sm text-stone-500 flex items-center">
           Service running
             <span className="relative flex h-3 w-3 ml-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-stone-100 opacity-75"></span>

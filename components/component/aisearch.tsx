@@ -6,21 +6,21 @@ import Typewriter from 'typewriter-effect';
 
 const Aisearch: React.FC = () => {
   return (
-    <div className="grid md:grid-cols-12 gap-0 bg-rose-500 min-h-[476px] rounded-3xl">
-      <div className="col-span-12 md:col-span-6 pl-6 pt-6 relative">
+    <div className="grid grid-cols-12 md:grid-cols-12 gap-0 bg-rose-500 min-h-[476px] rounded-3xl w-screen">
+      <div className="col-span-12 md:col-span-6 pl-4 md:pl-6 pt-6 relative">
         <p className="absolute top-2 left-2 text-sm text-rose-300 flex items-center">
           <Image className="w-12 h-12 float-left mr-2" src="/fb-w.png" alt="Nikon" width={1024} height={1024} />
           Anthropic Claude based AI assistant
         </p>
-        <h1 className="mt-16 pb-8 text-right bg-gradient-to-br from-stone-100 to-stone-200 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
+        <h1 className="mt-16 pb-8 text-left md:text-right bg-gradient-to-br from-stone-100 to-stone-200 bg-clip-text font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
         Research & Writer Assistant
         </h1>
-        <p className="text-rose-200 text-xl font-thin leading-7 tracking-normal text-right md:ml-16 mb-4">
+        <p className="text-rose-200 text-xl font-thin leading-7 tracking-normal text-left md:text-right md:ml-16 mb-4">
         AI assistant that can collect data from the Internet and then creatively process it while chatting with you.
         </p>
-        <p className="text-right">
+        <p className="md:text-right">
             <Link href="https://search.utopia.express" target="_blank">
-                <Badge variant="outline" className="mt-1 align-middle text-lg ml-4 text-left py-2 px-4">
+                <Badge variant="outline" className="mt-1 align-middle text-lg md:ml-4 text-left py-2 px-4">
                 search.utopia.express<SparIcon/>
                 </Badge>
             </Link>
@@ -31,7 +31,7 @@ const Aisearch: React.FC = () => {
       <div
         className="col-span-12 md:col-span-6 relative bg-cover bg-left-top bg-no-repeat rounded-3xl flex items-center">
 
-        <span className="absolute top-4 right-4 text-sm text-rose-300 flex items-center">
+        <span className="absolute top-4 right-16 md:right-4 text-sm text-rose-300 flex items-center">
           Service running
             <span className="relative flex h-3 w-3 ml-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-100 opacity-75"></span>

@@ -11,13 +11,17 @@ import { badgeVariants } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Video } from "@/components/component/video";
 import { LetterFx } from "./LetterFx";
+import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "@/components/ui/sheet";
+import { Suspense } from "react";
+import { PaperPlaneIcon } from "@radix-ui/react-icons";
+import ContactForm from "./ContactForm";
 
 
 export function MainHeroV3() {
   return (
-      <div className="mt-6 pt-8 mb-2 text-gray-800 dark:text-gray-100 grid md:grid-cols-12 md:gap-16">
+      <div className="mt-0 md:mt-6 pt-0 md:pt-8 mb-2 text-gray-800 dark:text-gray-100 grid md:grid-cols-12 md:gap-16">
         
-        <div className="col-span-6 text-left md:text-right md:mt-16 lg:mt-24">
+        <div className="col-span-6 text-left md:text-right mt-0 md:mt-16 lg:mt-24">
           <h1 className="md:pr-1 animate-fade pb-4 bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-cente md:text-right  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
           Let humans do,
           <br />
@@ -25,6 +29,7 @@ export function MainHeroV3() {
           </h1>
           <p className="col-span-6 mt-3 mb-6 text-xl mx-auto font-thin text-stone-500 dark:text-gray-100 transparent md:max-w-[56%] md:float-right">
             <span
+              className="leading-tight w-full"
               style={{
                 fontFamily: 'var(--font-family-code)'
               }}
@@ -53,10 +58,25 @@ export function MainHeroV3() {
                 Let's do things out of adventure, curiosity, joy and passion. It's time to level up.
               </LetterFx>
             </span>
+            <Sheet>
+              <SheetTrigger>
+                <Button variant="outline" className="relative mt-4 backdrop-blur-sm">
+                  <span className="mr-8">It's time to cooperate</span>
+                  <span className="absolute right-0 w-8 h-8 mr-1 shadow-sm bg-stone-100 text-stone-700 rounded-full flex items-center justify-center "><PaperPlaneIcon/></span>
+                </Button>
+              </SheetTrigger>
+              <Suspense fallback={<p>Call Lucy...</p>}>
+              <SheetContent className="w-full md:min-w-[760px] h-screen">
+                <SheetHeader>
+                  <ContactForm />
+                </SheetHeader>
+              </SheetContent>
+              </Suspense>
+          </Sheet>
           </p>
         </div>
 
-        <div className="mx-auto w-96 h-auto animate-fade-up animate-delay-300">
+        <div className="col-span-6 md:w-96 h-auto animate-fade-up animate-delay-300">
           <Video/>
         </div>
 
