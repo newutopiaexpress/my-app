@@ -106,8 +106,8 @@ export default function Home() {
           </div>
 
           <div className="max-w-[400px] md:max-w-[600px] mx-auto h-[170px] mt-36 mb-36 flex-row items-center">
-            <Image src="/amaz.jpg" width={896} height={1152} alt="Designed for the Future" className="max-w-32 h-auto float-left mr-12 rounded-full outline outline-8 outline-stone-300 outline-offset-4"/>
-            <p>Hi, I'm Tamas, the creator of Utopia Express. </p>
+            <Image src="/tamas2.png" width={200} height={200} alt="Designed for the Future" className="max-w-32 h-auto float-left mr-12 rounded-full outline outline-8 outline-stone-300 outline-offset-4"/>
+            <p>Hello! I'm Tamas, founder of Utopia Express. I create powerful websites and AI-driven applications that give your business a competitive edge. Have an exciting project in mind? Let's turn it into reality!</p>
             <Sheet>
               <SheetTrigger>
                 <Button variant="outline" className="relative mt-4 backdrop-blur-sm">
