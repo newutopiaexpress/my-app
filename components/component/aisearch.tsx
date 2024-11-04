@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 
 const Aisearch: React.FC = () => {
   return (
-    <div className="grid grid-cols-12 md:grid-cols-12 gap-0 bg-rose-500 min-h-[476px] rounded-3xl w-screen">
+    <div className="grid md:grid-cols-12 gap-0 bg-rose-500 min-h-[476px] rounded-3xl w-screen md:w-full">
       <div className="col-span-12 md:col-span-6 pl-4 md:pl-6 pt-6 relative">
         <p className="absolute top-2 left-2 text-sm text-rose-300 flex items-center">
           <Image className="w-12 h-12 float-left mr-2" src="/fb-w.png" alt="Nikon" width={1024} height={1024} />
