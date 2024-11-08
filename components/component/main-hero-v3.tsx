@@ -21,14 +21,20 @@ export function MainHeroV3() {
   return (
       <div className="mt-0 md:mt-6 pt-0 md:pt-8 mb-2 text-gray-800 dark:text-gray-100 grid md:grid-cols-12 md:gap-16">
         
-        <div className="col-span-6 text-left md:text-right mt-0 md:mt-16 lg:mt-24">
-          <h1 className="md:pr-1 animate-fade pb-4 bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-cente md:text-right  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
-          Let humans do,
-          <br />
-          what they really want to do
+        <div className="col-span-6 text-left md:text-right mt-0 md:mt-16 lg:mt-24 flex-col">
+          <h1 className="md:pr-1 animate-fade pb-4 bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-center md:text-right  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
+          AI is already smarter than most of us. 
           </h1>
+          <p className="w-full col-span-6 mt-3 mb-6 text-xl mx-auto font-thin text-stone-500 dark:text-gray-100 transparent md:max-w-[56%] md:float-right">
+            But it doesn't live. It doesn't do anything by itself.
+          </p>
+          <h1 className="md:pr-1 animate-fade pb-4 bg-gradient-to-br from-stone-900 to-stone-600 bg-clip-text text-center md:text-right  font-extrabold tracking-tighter text-transparent drop-shadow-sm [text-wrap:balance] text-5xl md:text-7xl md:leading-[4rem]">
+          But we create the spark in it.
+          </h1>
+          
           <p className="col-span-6 mt-3 mb-6 text-xl mx-auto font-thin text-stone-500 dark:text-gray-100 transparent md:max-w-[56%] md:float-right">
-            <span
+           Let it glow!
+            {/*<span
               className="leading-tight w-full"
               style={{
                 fontFamily: 'var(--font-family-code)'
@@ -57,7 +63,7 @@ export function MainHeroV3() {
               >
                 Let's do things out of adventure, curiosity, joy and passion. It's time to level up.
               </LetterFx>
-            </span>
+            </span>*/}
             <Sheet>
               <SheetTrigger>
                 <Button variant="outline" className="relative mt-4 backdrop-blur-sm">

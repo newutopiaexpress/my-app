@@ -87,7 +87,7 @@ export function NavBar() {
 
 <Sheet>
   <SheetTrigger>
-    <Button variant="outline" className="relative mt-4 backdrop-blur-sm">
+    <Button variant="outline" className="relative mt-4 backdrop-blur-lg">
                   <span className="mr-8">Send a message</span>
                   <span className="absolute right-0 w-8 h-8 mr-1 shadow-sm bg-stone-100 text-stone-700 rounded-full flex items-center justify-center "><PaperPlaneIcon/></span>
       </Button>
