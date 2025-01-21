@@ -21,7 +21,7 @@ export function Photographer() {
             <Link href="https://search.utopia.express" className="" target="_blank">
                 <p className="text-[10px] uppercase tracking-wider text-stone-400 hover:text-stone-800">
                     <span className="invisible md:visible">AI Photographer</span>
-                    <span className="float-right">clone.utopia.express <ArrowIcon/></span>
+                    <span className="float-right">utopia.photos <ArrowIcon/></span>
                 </p>
             </Link>
         <Separator className="w-full h-px bg-stone-500/10 mt-4 mb-4"/>

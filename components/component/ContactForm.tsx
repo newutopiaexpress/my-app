@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 // Form validation schema
 const formSchema = z.object({
   email: z.string().email('Invalid email address'),
+  subject: z.string().min(1, 'Subject is required'),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 });
 
@@ -37,7 +38,7 @@ export default function ContactForm() {
     setStatus({ type: null, message: '' });
     
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('/api/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -46,19 +47,20 @@ export default function ContactForm() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to send email');
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send email');
       }
 
       setStatus({
         type: 'success',
-        message: 'Your message has been sent successfully!'
+        message: 'Thank you! We will get in touch with you within 24 hours.'
       });
       
       reset(); // Reset form after successful submission
-    } catch (error) {
+    } catch (error: any) {
       setStatus({
         type: 'error',
-        message: 'Failed to send message. Please try again.'
+        message: error.message || 'Failed to send message. Please try again.'
       });
     } finally {
       setIsLoading(false);
@@ -81,8 +83,8 @@ export default function ContactForm() {
           <div
             className={`mt-4 p-4 rounded-md ${
               status.type === 'success'
-                ? 'bg-green-50 text-green-800'
-                : 'bg-red-50 text-red-800'
+                ? 'bg-green-50 text-green-500'
+                : 'bg-red-50 text-red-500'
             }`}
           >
             {status.message}
@@ -100,6 +102,18 @@ export default function ContactForm() {
               />
               {errors.email && (
                 <p className="mt-1 text-sm text-red-500">{errors.email.message}</p>
+              )}
+            </div>
+
+            <div>
+              <Input
+                {...register('subject')}
+                type="text"
+                placeholder="Subject"
+                className={errors.subject ? 'border-red-500' : ''}
+              />
+              {errors.subject && (
+                <p className="mt-1 text-sm text-red-500">{errors.subject.message}</p>
               )}
             </div>
 

@@ -37,7 +37,7 @@ export default function ContactForm() {
     setStatus({ type: null, message: '' });
     
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('/api/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -51,14 +51,14 @@ export default function ContactForm() {
 
       setStatus({
         type: 'success',
-        message: 'Your message has been sent successfully!'
+        message: 'Thank you! We will get in touch with you within 24 hours.'
       });
       
       reset(); // Reset form after successful submission
     } catch (error) {
       setStatus({
         type: 'error',
-        message: 'Failed to send message. Please try again.'
+        message: 'Oops, failed to send message. Please try again.'
       });
     } finally {
       setIsLoading(false);

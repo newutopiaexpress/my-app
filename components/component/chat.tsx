@@ -1,8 +1,10 @@
 import { Separator } from '@radix-ui/react-separator';
 import { useChat } from 'ai/react';
+import { useState } from 'react';
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
+  const [showSendButton, setShowSendButton] = useState(false);
 
   const predefinedQuestions = [
     "Web design and development",
@@ -27,7 +29,7 @@ export default function Chat() {
                 target: { value: question }
               } as React.ChangeEvent<HTMLInputElement>;
               handleInputChange(syntheticEvent);
-              handleSubmit(new Event('submit'));
+              setShowSendButton(true);
             }}
             className={`w-1/3 p-4 leading-tight border rounded-xl border-stone-300 bg-transparent text-stone-800 hover:shadow-lg transition-all outline outline-4 outline-offset-2 outline-stone-300/0 hover:outline-4 hover:outline-offset-2 hover:outline-stone-300/50 flex-row justify-center items-center  ${
               question === "Find my superpower!" ? "bg-gradient-to-tr !from-stone-800 !to-stone-900 !text-stone-100 shadow-2xl shadow-white hover:shadow-red-400/30" : ""
@@ -50,14 +52,22 @@ export default function Chat() {
         ))}
       </div>
 
-      <form onSubmit={handleSubmit}>
-        <div className="mx-9">
+      <form onSubmit={(e) => { handleSubmit(e); setShowSendButton(false); }}>
+        <div className="mx-9 relative">
           <input
             className="p-4 w-full mb-16 md:mb-20 border rounded-full transition-all border-gray-300 hover:shadow-xl outline outline-8 outline-offset-4 outline-stone-300/30 hover:outline-offset-0 hover:outline-1 hover:outline-stone-300"
             value={input}
             placeholder="How can we help you? Ask Lucy, our AI assistant"
             onChange={handleInputChange}
           />
+          {showSendButton && (
+            <button
+              type="submit"
+              className="absolute right-[7px] top-[29px] transform -translate-y-1/2 bg-fuchsia-400 text-white rounded-full px-5 py-3"
+            >
+              Send
+            </button>
+          )}
         </div>
       </form>
     </div>

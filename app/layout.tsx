@@ -1,4 +1,3 @@
-
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "@/components/component/nav-bar";
@@ -6,15 +5,6 @@ import { Suspense } from "react";
 import { FooterV2 } from "@/components/component/footer-v2";
 import Script from "next/script";
 import { Metadata } from 'next'; 
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
 import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -54,7 +44,15 @@ export default function RootLayout({ children }: any) {
               gtag('config', ${'${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'});
           `}
         </Script>
+{/*}
+        <Script
+          async
+          src="https://elevenlabs.io/convai-widget/index.js"
+          type="text/javascript"
+        />
+*/}
         <Analytics/>
+
       </head>
       <body className="scroll-smooth overflow-x-hidden	min-h-screen bg-background bg-fixed font-sans antialiased bg-gradient-to-tl from-red-100 to-stone-200">
         
